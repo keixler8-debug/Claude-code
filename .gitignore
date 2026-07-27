@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Xcode / XcodeGen
+ios/*.xcodeproj
+ios/*.xcworkspace
+ios/build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Node (solo se usa para las pruebas)
+node_modules/

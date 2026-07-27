@@ -1,0 +1,46 @@
+# Proyecto para XcodeGen (https://github.com/yonaskolb/XcodeGen)
+#
+#   cd ios
+#   brew install xcodegen
+#   xcodegen generate
+#   open Organizador.xcodeproj
+#
+# Si prefieres no instalar XcodeGen, el README explica cómo crear el proyecto
+# a mano desde Xcode en un par de minutos.
+
+name: Organizador
+
+options:
+  bundleIdPrefix: com.ejemplo
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  Organizador:
+    type: application
+    platform: iOS
+    sources:
+      - path: Organizador
+    settings:
+      base:
+        PRODUCT_NAME: Organizador
+        PRODUCT_BUNDLE_IDENTIFIER: com.ejemplo.organizador
+        INFOPLIST_FILE: Organizador/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"          # solo iPhone
+        SWIFT_EMIT_LOC_STRINGS: YES
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_ASSET_PATHS: ""
+        # Para que las alarmas atraviesen los modos de concentración hay que
+        # añadir el permiso "Time Sensitive Notifications" en Xcode
+        # (Signing & Capabilities). No viene activado porque requiere un perfil
+        # de aprovisionamiento que lo admita.
