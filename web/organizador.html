@@ -1,0 +1,3274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>Organizador</title>
+<meta name="theme-color" content="#0b0d13" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Organizador" />
+<link rel="apple-touch-icon" href="data:image/png;base64,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" />
+<link rel="icon" href="data:image/png;base64,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" />
+<style>
+/* ---------- Base ---------- */
+
+:root {
+  --bg: #f4f5f9;
+  --surface: #ffffff;
+  --surface-2: #eceef5;
+  --text: #14161c;
+  --muted: #6b7180;
+  --line: #dfe2ec;
+  --accent: #4c6ef5;
+  --accent-soft: #e6ebff;
+  --danger: #e03131;
+  --ok: #2f9e44;
+  --warn: #e8590c;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(16, 20, 40, .06), 0 8px 24px rgba(16, 20, 40, .07);
+  --tabbar-h: 58px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  --c-blue: #4c6ef5;
+  --c-violet: #7950f2;
+  --c-green: #2f9e44;
+  --c-orange: #f76707;
+  --c-pink: #e64980;
+  --c-teal: #0ca678;
+  --c-gray: #868e96;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d13;
+    --surface: #151824;
+    --surface-2: #1e2231;
+    --text: #e9ecf5;
+    --muted: #8d93a6;
+    --line: #262b3b;
+    --accent: #748ffc;
+    --accent-soft: #1e2440;
+    --danger: #ff6b6b;
+    --ok: #51cf66;
+    --warn: #ff922b;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+
+    --c-blue: #748ffc;
+    --c-violet: #9775fa;
+    --c-green: #51cf66;
+    --c-orange: #ff922b;
+    --c-pink: #f783ac;
+    --c-teal: #38d9a9;
+    --c-gray: #909296;
+  }
+}
+
+/* El visor de artifacts marca el tema en la raíz; debe ganar a la preferencia
+   del sistema en los dos sentidos, así que ambos temas se declaran explícitos. */
+:root[data-theme="dark"] {
+  --bg: #0b0d13;
+  --surface: #151824;
+  --surface-2: #1e2231;
+  --text: #e9ecf5;
+  --muted: #8d93a6;
+  --line: #262b3b;
+  --accent: #748ffc;
+  --accent-soft: #1e2440;
+  --danger: #ff6b6b;
+  --ok: #51cf66;
+  --warn: #ff922b;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+
+  --c-blue: #748ffc;
+  --c-violet: #9775fa;
+  --c-green: #51cf66;
+  --c-orange: #ff922b;
+  --c-pink: #f783ac;
+  --c-teal: #38d9a9;
+  --c-gray: #909296;
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f5f9;
+  --surface: #ffffff;
+  --surface-2: #eceef5;
+  --text: #14161c;
+  --muted: #6b7180;
+  --line: #dfe2ec;
+  --accent: #4c6ef5;
+  --accent-soft: #e6ebff;
+  --danger: #e03131;
+  --ok: #2f9e44;
+  --warn: #e8590c;
+  --shadow: 0 1px 2px rgba(16, 20, 40, .06), 0 8px 24px rgba(16, 20, 40, .07);
+  --c-blue: #4c6ef5;
+  --c-violet: #7950f2;
+  --c-green: #2f9e44;
+  --c-orange: #f76707;
+  --c-pink: #e64980;
+  --c-teal: #0ca678;
+  --c-gray: #868e96;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  padding-bottom: calc(var(--tabbar-h) + var(--safe-b));
+  min-height: 100vh;
+}
+
+svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+button { font: inherit; color: inherit; cursor: pointer; }
+
+h1, h2, h3 { margin: 0; font-weight: 650; letter-spacing: -.01em; }
+
+/* ---------- Barra superior ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding-top: var(--safe-t);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  min-height: 52px;
+}
+
+.topbar h1 { font-size: 22px; }
+
+.topbar-actions { display: flex; gap: 6px; align-items: center; }
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+}
+
+.icon-btn:active { transform: scale(.94); }
+
+/* ---------- Contenido ---------- */
+
+.view { padding: 14px 16px 108px; max-width: 780px; margin: 0 auto; }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 2px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.section-title:first-child { margin-top: 4px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.empty {
+  padding: 26px 18px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.empty strong { display: block; color: var(--text); margin-bottom: 4px; font-weight: 600; }
+
+/* ---------- Filas de elementos ---------- */
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.row:last-child { border-bottom: none; }
+
+.row-bar {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--dot, var(--c-blue));
+}
+
+.check {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  background: transparent;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.check svg { width: 14px; height: 14px; stroke-width: 3; opacity: 0; }
+.check.done { background: var(--ok); border-color: var(--ok); color: #fff; }
+.check.done svg { opacity: 1; }
+.check:active { transform: scale(.9); }
+
+.row-main { flex: 1; min-width: 0; }
+
+.row-title {
+  font-size: 15.5px;
+  font-weight: 550;
+  overflow-wrap: anywhere;
+}
+
+.row.done .row-title { text-decoration: line-through; color: var(--muted); }
+
+.row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 3px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.row-meta .overdue { color: var(--danger); font-weight: 600; }
+
+.row-time {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  padding-top: 1px;
+  min-width: 46px;
+  text-align: right;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.chip.alarm { color: var(--warn); background: color-mix(in srgb, var(--warn) 14%, transparent); }
+
+.row-edit {
+  flex: none;
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--muted);
+  opacity: .55;
+}
+
+/* ---------- Cabecera "Hoy" ---------- */
+
+.hero {
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--c-violet)));
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.hero .date { font-size: 14px; opacity: .88; }
+.hero .date::first-letter { text-transform: uppercase; }
+.hero .headline { font-size: 25px; font-weight: 700; margin-top: 2px; }
+.hero .sub { font-size: 14px; opacity: .9; margin-top: 6px; }
+
+.next-up {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, .28);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.next-up b { font-weight: 650; }
+
+/* ---------- Calendario ---------- */
+
+.cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cal-head .month { font-size: 18px; font-weight: 650; }
+.cal-head .month::first-letter { text-transform: uppercase; }
+
+.cal-nav { display: flex; gap: 6px; }
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.weekdays span {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .05em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.day {
+  position: relative;
+  aspect-ratio: 1 / 1.06;
+  border: none;
+  border-radius: 10px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 2px 4px;
+  gap: 3px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.day.out { color: var(--muted); opacity: .45; }
+.day.today { outline: 2px solid var(--accent); outline-offset: -2px; font-weight: 700; }
+.day.selected { background: var(--accent); color: #fff; }
+/* Sobre el fondo azul del día elegido, los colores propios no se distinguen. */
+.day.selected .dot { background: #fff; }
+
+.dots { display: flex; gap: 2.5px; flex-wrap: wrap; justify-content: center; max-width: 100%; }
+
+.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--dot, var(--c-blue)); }
+
+.day .count { font-size: 10px; color: inherit; opacity: .7; }
+
+/* ---------- Formulario / hoja ---------- */
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(6, 8, 16, .55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fade .18s ease;
+}
+
+@keyframes fade { from { opacity: 0; } }
+@keyframes slide-up { from { transform: translateY(22px); opacity: .4; } }
+
+.sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 92vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg);
+  border-radius: 18px 18px 0 0;
+  padding: 0 16px calc(20px + var(--safe-b));
+  animation: slide-up .22s cubic-bezier(.2, .8, .3, 1);
+}
+
+@media (min-width: 620px) {
+  .sheet-backdrop { align-items: center; }
+  .sheet { border-radius: 18px; max-height: 88vh; }
+}
+
+.sheet-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 0 12px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 14px;
+}
+
+.sheet-head h2 { font-size: 17px; }
+
+.link-btn { background: none; border: none; color: var(--accent); font-weight: 600; padding: 6px 2px; }
+.link-btn.danger { color: var(--danger); }
+
+.field { margin-bottom: 14px; }
+
+.field > label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing: .02em;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"], textarea, select {
+  width: 100%;
+  padding: 11px 12px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  appearance: none;
+}
+
+textarea { min-height: 76px; resize: vertical; }
+
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+.row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.segmented {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3px;
+  padding: 3px;
+  background: var(--surface-2);
+  border-radius: 12px;
+}
+
+.segmented button {
+  border: none;
+  background: transparent;
+  padding: 9px 6px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.segmented button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.pill {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.pill.day-pill { width: 40px; padding: 8px 0; text-align: center; }
+
+.swatches { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--dot);
+  padding: 0;
+}
+
+.swatch[aria-pressed="true"] { border-color: var(--text); box-shadow: 0 0 0 2px var(--bg) inset; }
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.toggle-row:last-child { border-bottom: none; }
+.toggle-row .label { font-size: 15px; }
+.toggle-row .hint { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+.switch { position: relative; width: 48px; height: 29px; flex: none; }
+.switch input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; z-index: 1; }
+.switch span {
+  position: absolute;
+  inset: 0;
+  background: var(--surface-2);
+  border-radius: 999px;
+  transition: background .18s;
+}
+.switch span::after {
+  content: '';
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 23px; height: 23px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  transition: transform .18s;
+}
+.switch input:checked + span { background: var(--ok); }
+.switch input:checked + span::after { transform: translateX(19px); }
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+.btn:active { transform: scale(.985); }
+.btn.secondary { background: var(--surface); color: var(--text); border: 1px solid var(--line); }
+.btn.danger { background: var(--danger); }
+.btn + .btn { margin-top: 8px; }
+
+.hint-text { font-size: 13px; color: var(--muted); margin: 8px 2px 0; }
+.hint-text code { background: var(--surface-2); padding: 1px 5px; border-radius: 5px; font-size: 12px; }
+
+/* ---------- FAB ---------- */
+
+.fab {
+  position: fixed;
+  right: 18px;
+  bottom: calc(var(--tabbar-h) + var(--safe-b) + 16px);
+  z-index: 40;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 20px rgba(76, 110, 245, .42);
+}
+
+.fab svg { width: 26px; height: 26px; stroke-width: 2.4; }
+.fab:active { transform: scale(.93); }
+
+/* ---------- Tabbar ---------- */
+
+.tabbar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: calc(var(--tabbar-h) + var(--safe-b));
+  padding-bottom: var(--safe-b);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-top: 1px solid var(--line);
+}
+
+.tab {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.tab svg { width: 21px; height: 21px; }
+.tab[aria-selected="true"] { color: var(--accent); }
+
+/* ---------- Alarma ---------- */
+
+.alarm-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(4, 6, 12, .82);
+  backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  animation: fade .2s ease;
+}
+
+.alarm-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 26px 22px 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .5);
+  animation: pop .28s cubic-bezier(.2, .9, .3, 1.1);
+}
+
+@keyframes pop { from { transform: scale(.88); opacity: 0; } }
+
+.alarm-bell {
+  width: 62px; height: 62px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--warn) 18%, transparent);
+  color: var(--warn);
+  animation: shake 1.1s ease-in-out infinite;
+}
+
+.alarm-bell svg { width: 30px; height: 30px; }
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  15% { transform: rotate(-12deg); }
+  30% { transform: rotate(10deg); }
+  45% { transform: rotate(-7deg); }
+  60% { transform: rotate(5deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+.alarm-when { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--warn); }
+.alarm-title { font-size: 21px; font-weight: 700; margin: 6px 0 4px; overflow-wrap: anywhere; }
+.alarm-sub { font-size: 14px; color: var(--muted); margin-bottom: 18px; }
+.alarm-more { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+/* ---------- Toast ---------- */
+
+.toast-root {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--tabbar-h) + var(--safe-b) + 78px);
+  transform: translateX(-50%);
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+  width: min(92vw, 420px);
+}
+
+.toast {
+  background: #1e2231;
+  color: #fff;
+  padding: 11px 15px;
+  border-radius: 11px;
+  font-size: 14px;
+  box-shadow: var(--shadow);
+  animation: fade .18s ease;
+}
+
+.toast.error { background: var(--danger); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+      <h1 id="view-title">Hoy</h1>
+      <div class="topbar-actions" id="topbar-actions"></div>
+    </div>
+  </header>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <button id="fab" class="fab" type="button" aria-label="Añadir">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+  </button>
+
+  <nav class="tabbar" id="tabbar" role="tablist">
+    <button class="tab" data-tab="hoy" role="tab" aria-selected="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+      <span>Hoy</span>
+    </button>
+    <button class="tab" data-tab="calendario" role="tab" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      <span>Calendario</span>
+    </button>
+    <button class="tab" data-tab="tareas" role="tab" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l2.5 2.5L11 5"/><path d="M4 17l2.5 2.5L11 15"/><path d="M14 8h6M14 18h6"/></svg>
+      <span>Tareas</span>
+    </button>
+    <button class="tab" data-tab="rutinas" role="tab" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/></svg>
+      <span>Rutinas</span>
+    </button>
+    <button class="tab" data-tab="ajustes" role="tab" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+      <span>Ajustes</span>
+    </button>
+  </nav>
+
+  <div id="sheet-root"></div>
+  <div id="alarm-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="assertive"></div>
+<script>
+const __m = {};
+
+__m["js/dates.js"] = (() => {
+/* Utilidades de fecha. Todo se trabaja en hora local del dispositivo. */
+const DAY_NAMES = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+const DAY_SHORT = ['D', 'L', 'M', 'X', 'J', 'V', 'S'];
+const MONTH_NAMES = [
+  'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',
+];
+
+const pad = (n) => String(n).padStart(2, '0');
+
+/** 'YYYY-MM-DD' de una fecha local. */
+function dateKey(d) {
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+/** 'HH:MM' de una fecha local. */
+function timeKey(d) {
+  return `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+/** Convierte 'YYYY-MM-DD' (+ opcional 'HH:MM') en un Date local. */
+function fromParts(dateStr, timeStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const [hh, mm] = (timeStr || '00:00').split(':').map(Number);
+  return new Date(y, m - 1, d, hh || 0, mm || 0, 0, 0);
+}
+
+/** Acepta 'YYYY-MM-DDTHH:MM' (local, sin zona) o un ISO completo. */
+function parseLocal(value) {
+  if (!value) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2}))?/.exec(value);
+  if (!m) return new Date(value);
+  return new Date(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0), 0, 0);
+}
+
+/** Serializa a 'YYYY-MM-DDTHH:MM' (lo que espera <input type="datetime-local">). */
+function toLocalInput(d) {
+  if (!d) return '';
+  return `${dateKey(d)}T${timeKey(d)}`;
+}
+function startOfDay(d) {
+  const x = new Date(d);
+  x.setHours(0, 0, 0, 0);
+  return x;
+}
+function endOfDay(d) {
+  const x = new Date(d);
+  x.setHours(23, 59, 59, 999);
+  return x;
+}
+function addDays(d, n) {
+  const x = new Date(d);
+  x.setDate(x.getDate() + n);
+  return x;
+}
+function addMonths(d, n) {
+  const x = new Date(d);
+  x.setDate(1);
+  x.setMonth(x.getMonth() + n);
+  return x;
+}
+function sameDay(a, b) {
+  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+}
+function isToday(d) {
+  return sameDay(d, new Date());
+}
+
+/** Días de diferencia en el calendario (ignora la hora). */
+function daysBetween(a, b) {
+  return Math.round((startOfDay(b) - startOfDay(a)) / 86400000);
+}
+
+/** Lunes (o el día configurado) de la semana que contiene `d`. */
+function startOfWeek(d, weekStart = 1) {
+  const x = startOfDay(d);
+  const diff = (x.getDay() - weekStart + 7) % 7;
+  return addDays(x, -diff);
+}
+
+/** Rejilla de 6x7 días que cubre el mes de `d`. */
+function monthGrid(d, weekStart = 1) {
+  const first = new Date(d.getFullYear(), d.getMonth(), 1);
+  const start = startOfWeek(first, weekStart);
+  return Array.from({ length: 42 }, (_, i) => addDays(start, i));
+}
+function formatTime(d) {
+  return d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+}
+function formatDateLong(d) {
+  return `${DAY_NAMES[d.getDay()]}, ${d.getDate()} de ${MONTH_NAMES[d.getMonth()]}`;
+}
+function formatDateShort(d) {
+  return `${d.getDate()} ${MONTH_NAMES[d.getMonth()].slice(0, 3)}`;
+}
+function formatMonthYear(d) {
+  return `${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+/** "en 15 min", "hace 2 h", "mañana"… */
+function relative(target, now = new Date()) {
+  const diffMin = Math.round((target - now) / 60000);
+  const abs = Math.abs(diffMin);
+  if (abs < 1) return 'ahora';
+  if (abs < 60) return diffMin > 0 ? `en ${abs} min` : `hace ${abs} min`;
+  const days = daysBetween(now, target);
+  if (days === 0) {
+    const h = Math.round(abs / 60);
+    return diffMin > 0 ? `en ${h} h` : `hace ${h} h`;
+  }
+  if (days === 1) return 'mañana';
+  if (days === -1) return 'ayer';
+  if (days > 0) return `en ${days} días`;
+  return `hace ${Math.abs(days)} días`;
+}
+
+  return {
+    DAY_NAMES,
+    DAY_SHORT,
+    MONTH_NAMES,
+    dateKey,
+    timeKey,
+    fromParts,
+    parseLocal,
+    toLocalInput,
+    startOfDay,
+    endOfDay,
+    addDays,
+    addMonths,
+    sameDay,
+    isToday,
+    daysBetween,
+    startOfWeek,
+    monthGrid,
+    formatTime,
+    formatDateLong,
+    formatDateShort,
+    formatMonthYear,
+    relative,
+  };
+})();
+
+__m["js/store.js"] = (() => {
+/* Almacenamiento local. Todo vive en este dispositivo: nada sale a ningún servidor. */
+
+const KEY = 'organizador.v1';
+
+const DEFAULT_STATE = {
+  version: 1,
+  events: [],    // citas con hora de inicio/fin
+  tasks: [],     // tareas puntuales (one-time)
+  routines: [],  // tareas que se repiten (diarias, semanales, mensuales)
+  settings: {
+    startOfWeek: 1,        // 1 = lunes
+    defaultAlarms: [10],   // minutos antes, por defecto
+    sound: true,
+    notifications: false,
+    calendarName: 'Mi Organizador',
+  },
+};
+
+const listeners = new Set();
+let state = load();
+
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (!raw) return structuredClone(DEFAULT_STATE);
+    const parsed = JSON.parse(raw);
+    return {
+      ...structuredClone(DEFAULT_STATE),
+      ...parsed,
+      settings: { ...DEFAULT_STATE.settings, ...(parsed.settings || {}) },
+    };
+  } catch (err) {
+    console.error('No se pudo leer el almacenamiento, empiezo de cero:', err);
+    return structuredClone(DEFAULT_STATE);
+  }
+}
+
+function persist() {
+  try {
+    localStorage.setItem(KEY, JSON.stringify(state));
+  } catch (err) {
+    console.error('No se pudo guardar:', err);
+    alert('No se pudo guardar en este dispositivo. ¿Estás en modo privado o sin espacio?');
+  }
+}
+
+function emit() {
+  persist();
+  for (const fn of listeners) fn(state);
+}
+function subscribe(fn) {
+  listeners.add(fn);
+  return () => listeners.delete(fn);
+}
+function getState() {
+  return state;
+}
+function getSettings() {
+  return state.settings;
+}
+function updateSettings(patch) {
+  state.settings = { ...state.settings, ...patch };
+  emit();
+}
+function uid() {
+  return 'id-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+}
+
+const COLLECTIONS = { event: 'events', task: 'tasks', routine: 'routines' };
+
+function collectionFor(type) {
+  const name = COLLECTIONS[type];
+  if (!name) throw new Error('Tipo desconocido: ' + type);
+  return name;
+}
+function save(item) {
+  const list = state[collectionFor(item.type)];
+  if (!item.id) {
+    item.id = uid();
+    item.createdAt = new Date().toISOString();
+    list.push(item);
+  } else {
+    const i = list.findIndex((x) => x.id === item.id);
+    if (i === -1) list.push(item);
+    else list[i] = { ...list[i], ...item, updatedAt: new Date().toISOString() };
+  }
+  emit();
+  return item;
+}
+function remove(type, id) {
+  const name = collectionFor(type);
+  state[name] = state[name].filter((x) => x.id !== id);
+  emit();
+}
+function find(type, id) {
+  return state[collectionFor(type)].find((x) => x.id === id) || null;
+}
+
+/** Marca/desmarca una tarea puntual. */
+function toggleTask(id) {
+  const task = find('task', id);
+  if (!task) return;
+  task.done = !task.done;
+  task.doneAt = task.done ? new Date().toISOString() : null;
+  emit();
+}
+
+/** Marca/desmarca una rutina para un día concreto (clave 'YYYY-MM-DD'). */
+function toggleRoutine(id, dateKey) {
+  const routine = find('routine', id);
+  if (!routine) return;
+  routine.completions = routine.completions || {};
+  if (routine.completions[dateKey]) delete routine.completions[dateKey];
+  else routine.completions[dateKey] = new Date().toISOString();
+  emit();
+}
+function isRoutineDone(routine, dateKey) {
+  return Boolean(routine.completions && routine.completions[dateKey]);
+}
+
+/* ---- Copia de seguridad ---- */
+function exportJSON() {
+  return JSON.stringify(state, null, 2);
+}
+function importJSON(text, { merge = false } = {}) {
+  const incoming = JSON.parse(text);
+  if (!incoming || typeof incoming !== 'object') throw new Error('El archivo no tiene el formato esperado.');
+  if (merge) {
+    for (const key of ['events', 'tasks', 'routines']) {
+      const existing = new Set(state[key].map((x) => x.id));
+      for (const item of incoming[key] || []) {
+        if (!existing.has(item.id)) state[key].push(item);
+      }
+    }
+  } else {
+    state = {
+      ...structuredClone(DEFAULT_STATE),
+      ...incoming,
+      settings: { ...DEFAULT_STATE.settings, ...(incoming.settings || {}) },
+    };
+  }
+  emit();
+}
+function clearAll() {
+  state = structuredClone(DEFAULT_STATE);
+  emit();
+}
+
+/** Añade varios elementos de golpe (usado por la importación de .ics). */
+function addMany(items) {
+  for (const item of items) {
+    item.id = item.id || uid();
+    item.createdAt = item.createdAt || new Date().toISOString();
+    state[collectionFor(item.type)].push(item);
+  }
+  emit();
+}
+
+  return {
+    subscribe,
+    getState,
+    getSettings,
+    updateSettings,
+    uid,
+    save,
+    remove,
+    find,
+    toggleTask,
+    toggleRoutine,
+    isRoutineDone,
+    exportJSON,
+    importJSON,
+    clearAll,
+    addMany,
+  };
+})();
+
+__m["js/agenda.js"] = (() => {
+/* Convierte eventos, tareas y rutinas en "ocurrencias" concretas de un día. */
+const { dateKey, fromParts, parseLocal, addDays, startOfDay, endOfDay, daysBetween } = __m["js/dates.js"];
+const { getState, isRoutineDone } = __m["js/store.js"];
+/**
+ * ¿Toca esta rutina el día `date`?
+ * rule = { freq: 'daily' | 'weekly' | 'monthly', interval, byDay: [0..6], byMonthDay: [1..31] }
+ */
+function routineOccursOn(routine, date) {
+  const rule = routine.rule || { freq: 'daily', interval: 1 };
+  const day = startOfDay(date);
+
+  const from = routine.startDate ? startOfDay(fromParts(routine.startDate)) : null;
+  if (from && day < from) return false;
+  if (routine.endDate && day > endOfDay(fromParts(routine.endDate))) return false;
+
+  const interval = Math.max(1, rule.interval || 1);
+
+  if (rule.freq === 'daily') {
+    if (!from || interval === 1) return true;
+    return daysBetween(from, day) % interval === 0;
+  }
+
+  if (rule.freq === 'weekly') {
+    const days = rule.byDay && rule.byDay.length ? rule.byDay : [day.getDay()];
+    if (!days.includes(day.getDay())) return false;
+    if (!from || interval === 1) return true;
+    const weeks = Math.floor(daysBetween(from, day) / 7);
+    return weeks % interval === 0;
+  }
+
+  if (rule.freq === 'monthly') {
+    const nums = rule.byMonthDay && rule.byMonthDay.length ? rule.byMonthDay : [from ? from.getDate() : day.getDate()];
+    // "día 31" en un mes de 30 se resuelve el último día del mes.
+    const lastOfMonth = new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate();
+    const matches = nums.some((n) => n === day.getDate() || (n > lastOfMonth && day.getDate() === lastOfMonth));
+    if (!matches) return false;
+    if (!from || interval === 1) return true;
+    const months = (day.getFullYear() - from.getFullYear()) * 12 + (day.getMonth() - from.getMonth());
+    return months % interval === 0;
+  }
+
+  return false;
+}
+
+const PLURAL_DAYS = ['domingos', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábados'];
+
+/** Descripción legible de la repetición. */
+function describeRule(rule = {}) {
+  const n = Math.max(1, rule.interval || 1);
+  if (rule.freq === 'daily') return n === 1 ? 'Todos los días' : `Cada ${n} días`;
+  if (rule.freq === 'weekly') {
+    const days = (rule.byDay || []).slice().sort();
+    const isWeekdays = days.length === 5 && days.join() === '1,2,3,4,5';
+    const isWeekend = days.length === 2 && days.join() === '0,6';
+    let which;
+    if (isWeekdays) which = 'de lunes a viernes';
+    else if (isWeekend) which = 'los fines de semana';
+    else if (days.length) which = 'los ' + days.map((d) => PLURAL_DAYS[d]).join(', ');
+    else which = '';
+    return n === 1 ? `Cada semana ${which}`.trim() : `Cada ${n} semanas ${which}`.trim();
+  }
+  if (rule.freq === 'monthly') {
+    const days = (rule.byMonthDay || []).join(', ');
+    const which = days ? `el día ${days}` : '';
+    return n === 1 ? `Cada mes ${which}`.trim() : `Cada ${n} meses ${which}`.trim();
+  }
+  return 'Sin repetición';
+}
+
+/**
+ * Ocurrencias de un día concreto, ordenadas por hora.
+ * Cada ocurrencia: { key, kind, item, title, start: Date|null, end: Date|null, allDay, done, overdue }
+ */
+function occurrencesForDay(date) {
+  const state = getState();
+  const key = dateKey(date);
+  const dayStart = startOfDay(date);
+  const dayEnd = endOfDay(date);
+  const now = new Date();
+  const out = [];
+
+  for (const ev of state.events) {
+    const start = parseLocal(ev.start);
+    if (!start) continue;
+    const end = ev.end ? parseLocal(ev.end) : null;
+    // Un evento aparece en el día si se solapa con él (soporta eventos de varios días).
+    const last = end && end > start ? end : start;
+    if (last < dayStart || start > dayEnd) continue;
+    out.push({
+      key: `event:${ev.id}:${key}`,
+      kind: 'event',
+      item: ev,
+      title: ev.title,
+      start,
+      end,
+      allDay: Boolean(ev.allDay),
+      done: false,
+      overdue: false,
+      dateKey: key,
+    });
+  }
+
+  for (const task of state.tasks) {
+    if (!task.due) continue;
+    const due = parseLocal(task.due);
+    if (dateKey(due) !== key) continue;
+    out.push({
+      key: `task:${task.id}:${key}`,
+      kind: 'task',
+      item: task,
+      title: task.title,
+      start: task.allDay ? null : due,
+      end: null,
+      allDay: Boolean(task.allDay),
+      done: Boolean(task.done),
+      overdue: !task.done && due < now,
+      dateKey: key,
+    });
+  }
+
+  for (const routine of state.routines) {
+    if (!routineOccursOn(routine, date)) continue;
+    const start = routine.time ? fromParts(key, routine.time) : null;
+    out.push({
+      key: `routine:${routine.id}:${key}`,
+      kind: 'routine',
+      item: routine,
+      title: routine.title,
+      start,
+      end: null,
+      allDay: !routine.time,
+      done: isRoutineDone(routine, key),
+      overdue: Boolean(start) && !isRoutineDone(routine, key) && start < now,
+      dateKey: key,
+    });
+  }
+
+  return out.sort(sortOccurrences);
+}
+
+function sortOccurrences(a, b) {
+  if (!a.start && !b.start) return a.title.localeCompare(b.title, 'es');
+  if (!a.start) return -1;
+  if (!b.start) return 1;
+  return a.start - b.start;
+}
+
+/** Ocurrencias de un rango, agrupadas por día. Devuelve [{ date, key, items }]. */
+function occurrencesForRange(from, to) {
+  const days = [];
+  let cursor = startOfDay(from);
+  const last = startOfDay(to);
+  let guard = 0;
+  while (cursor <= last && guard++ < 800) {
+    days.push({ date: new Date(cursor), key: dateKey(cursor), items: occurrencesForDay(cursor) });
+    cursor = addDays(cursor, 1);
+  }
+  return days;
+}
+
+/** Tareas puntuales sin hacer cuya fecha ya pasó (antes de hoy). */
+function overdueTasks(now = new Date()) {
+  const today = startOfDay(now);
+  return getState()
+    .tasks.filter((t) => !t.done && t.due && parseLocal(t.due) < today)
+    .sort((a, b) => parseLocal(a.due) - parseLocal(b.due));
+}
+
+/** Tareas puntuales sin fecha. */
+function inboxTasks() {
+  return getState().tasks.filter((t) => !t.due && !t.done);
+}
+
+/**
+ * Próximas alarmas dentro de una ventana de tiempo.
+ * Devuelve [{ at: Date, occurrence, minutesBefore, id }] ordenadas.
+ */
+function upcomingAlarms(from = new Date(), windowDays = 8) {
+  const alarms = [];
+  const days = occurrencesForRange(from, addDays(from, windowDays));
+  for (const day of days) {
+    for (const occ of day.items) {
+      if (!occ.start || occ.done) continue;
+      const offsets = occ.item.alarms && occ.item.alarms.length ? occ.item.alarms : [];
+      for (const minutes of offsets) {
+        const at = new Date(occ.start.getTime() - minutes * 60000);
+        if (at < from) continue;
+        alarms.push({
+          id: `${occ.key}@${minutes}`,
+          at,
+          minutesBefore: minutes,
+          occurrence: occ,
+        });
+      }
+    }
+  }
+  return alarms.sort((a, b) => a.at - b.at);
+}
+
+  return {
+    routineOccursOn,
+    describeRule,
+    occurrencesForDay,
+    occurrencesForRange,
+    overdueTasks,
+    inboxTasks,
+    upcomingAlarms,
+  };
+})();
+
+__m["js/ics.js"] = (() => {
+/*
+ * Generación e importación de archivos .ics (iCalendar, RFC 5545).
+ *
+ * Este es el puente con el iPhone: el Calendario de iOS entiende VALARM, así que
+ * cada evento/tarea/rutina exportada suena como una alerta nativa del sistema.
+ * Usamos horas "flotantes" (sin zona horaria) a propósito: iOS las interpreta en
+ * la hora local del teléfono, que es justo lo que quieres para una agenda personal.
+ */
+const { fromParts, parseLocal, dateKey } = __m["js/dates.js"];
+const { getState } = __m["js/store.js"];
+const ICS_DAYS = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+const pad = (n) => String(n).padStart(2, '0');
+
+function escapeText(value = '') {
+  return String(value)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\r?\n/g, '\\n');
+}
+
+function unescapeText(value = '') {
+  return value
+    .replace(/\\n/gi, '\n')
+    .replace(/\\,/g, ',')
+    .replace(/\\;/g, ';')
+    .replace(/\\\\/g, '\\');
+}
+
+/** 'YYYYMMDDTHHMMSS' en hora local flotante. */
+function icsLocal(d) {
+  return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+}
+
+/** 'YYYYMMDD' para eventos de día completo. */
+function icsDate(d) {
+  return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+}
+
+/** 'YYYYMMDDTHHMMSSZ' en UTC (para DTSTAMP). */
+function icsUTC(d) {
+  return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+}
+
+/** Plegado de líneas a 75 octetos, como manda el RFC. */
+function fold(line) {
+  const bytes = new TextEncoder().encode(line);
+  if (bytes.length <= 75) return line;
+  const out = [];
+  let current = '';
+  let size = 0;
+  for (const char of line) {
+    const charSize = new TextEncoder().encode(char).length;
+    if (size + charSize > (out.length === 0 ? 75 : 74)) {
+      out.push(current);
+      current = '';
+      size = 0;
+    }
+    current += char;
+    size += charSize;
+  }
+  if (current) out.push(current);
+  return out.join('\r\n ');
+}
+
+function alarmBlock(minutesBefore, title) {
+  const trigger = minutesBefore === 0 ? 'PT0M' : `-PT${minutesBefore}M`;
+  return [
+    'BEGIN:VALARM',
+    'ACTION:DISPLAY',
+    `TRIGGER:${trigger}`,
+    `DESCRIPTION:${escapeText(title)}`,
+    'END:VALARM',
+  ];
+}
+
+function ruleToRRule(rule = {}, endDate) {
+  const interval = Math.max(1, rule.interval || 1);
+  const parts = [];
+  if (rule.freq === 'daily') parts.push('FREQ=DAILY');
+  else if (rule.freq === 'weekly') {
+    parts.push('FREQ=WEEKLY');
+    if (rule.byDay && rule.byDay.length) parts.push('BYDAY=' + rule.byDay.map((d) => ICS_DAYS[d]).join(','));
+  } else if (rule.freq === 'monthly') {
+    parts.push('FREQ=MONTHLY');
+    if (rule.byMonthDay && rule.byMonthDay.length) parts.push('BYMONTHDAY=' + rule.byMonthDay.join(','));
+  } else return null;
+  if (interval > 1) parts.push('INTERVAL=' + interval);
+  // DTSTART es flotante, así que UNTIL también debe serlo (RFC 5545 §3.3.10).
+  if (endDate) parts.push('UNTIL=' + icsLocal(fromParts(endDate, '23:59')));
+  return parts.join(';');
+}
+
+function vevent({ uid, stamp, title, notes, start, end, allDay, alarms, rrule, categories }) {
+  const lines = ['BEGIN:VEVENT', `UID:${uid}`, `DTSTAMP:${icsUTC(stamp)}`];
+  if (allDay) {
+    lines.push(`DTSTART;VALUE=DATE:${icsDate(start)}`);
+    const dayAfter = new Date(end || start);
+    dayAfter.setDate(dayAfter.getDate() + 1);
+    lines.push(`DTEND;VALUE=DATE:${icsDate(dayAfter)}`);
+  } else {
+    lines.push(`DTSTART:${icsLocal(start)}`);
+    lines.push(`DTEND:${icsLocal(end || new Date(start.getTime() + 30 * 60000))}`);
+  }
+  if (rrule) lines.push(`RRULE:${rrule}`);
+  lines.push(`SUMMARY:${escapeText(title)}`);
+  if (notes) lines.push(`DESCRIPTION:${escapeText(notes)}`);
+  if (categories) lines.push(`CATEGORIES:${escapeText(categories)}`);
+  for (const minutes of alarms || []) lines.push(...alarmBlock(minutes, title));
+  lines.push('END:VEVENT');
+  return lines;
+}
+
+/**
+ * Construye el .ics completo.
+ * opts.include = { events, tasks, routines } — qué exportar.
+ * opts.includeDone = incluir tareas ya hechas.
+ */
+function buildICS(opts = {}) {
+  const { include = { events: true, tasks: true, routines: true }, includeDone = false } = opts;
+  const state = getState();
+  const stamp = new Date();
+  const name = state.settings.calendarName || 'Mi Organizador';
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Organizador//ES',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    `X-WR-CALNAME:${escapeText(name)}`,
+    `X-WR-TIMEZONE:${Intl.DateTimeFormat().resolvedOptions().timeZone}`,
+    'X-PUBLISHED-TTL:PT1H',
+    'REFRESH-INTERVAL;VALUE=DURATION:PT1H',
+  ];
+
+  if (include.events) {
+    for (const ev of state.events) {
+      const start = parseLocal(ev.start);
+      if (!start) continue;
+      lines.push(...vevent({
+        uid: `${ev.id}@organizador`,
+        stamp,
+        title: ev.title,
+        notes: ev.notes,
+        start,
+        end: ev.end ? parseLocal(ev.end) : null,
+        allDay: ev.allDay,
+        alarms: ev.alarms,
+        categories: 'Evento',
+      }));
+    }
+  }
+
+  if (include.tasks) {
+    for (const task of state.tasks) {
+      if (!task.due) continue;
+      if (task.done && !includeDone) continue;
+      const due = parseLocal(task.due);
+      lines.push(...vevent({
+        uid: `${task.id}@organizador`,
+        stamp,
+        title: (task.done ? '✓ ' : '') + task.title,
+        notes: task.notes,
+        start: due,
+        end: null,
+        allDay: task.allDay,
+        alarms: task.done ? [] : task.alarms,
+        categories: 'Tarea',
+      }));
+    }
+  }
+
+  if (include.routines) {
+    for (const routine of state.routines) {
+      const rrule = ruleToRRule(routine.rule, routine.endDate);
+      if (!rrule) continue;
+      const baseDate = routine.startDate || dateKey(new Date());
+      const start = fromParts(baseDate, routine.time || '09:00');
+      lines.push(...vevent({
+        uid: `${routine.id}@organizador`,
+        stamp,
+        title: routine.title,
+        notes: routine.notes,
+        start,
+        end: new Date(start.getTime() + 15 * 60000),
+        allDay: false,
+        alarms: routine.alarms,
+        rrule,
+        categories: 'Rutina',
+      }));
+    }
+  }
+
+  lines.push('END:VCALENDAR');
+  return lines.map(fold).join('\r\n') + '\r\n';
+}
+
+/* ---------------- Importación ---------------- */
+
+function unfold(text) {
+  return text.replace(/\r\n[ \t]/g, '').replace(/\n[ \t]/g, '');
+}
+
+function parseIcsDate(value, params) {
+  const isDate = /VALUE=DATE(?!-)/i.test(params || '') || /^\d{8}$/.test(value);
+  if (isDate) {
+    const y = +value.slice(0, 4), m = +value.slice(4, 6), d = +value.slice(6, 8);
+    return { date: new Date(y, m - 1, d), allDay: true };
+  }
+  const m = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})?(Z)?$/.exec(value);
+  if (!m) return null;
+  if (m[7] === 'Z') {
+    return { date: new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0))), allDay: false };
+  }
+  return { date: new Date(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0)), allDay: false };
+}
+
+function rruleToRule(value) {
+  const parts = Object.fromEntries(
+    value.split(';').map((p) => {
+      const [k, v] = p.split('=');
+      return [k.toUpperCase(), v];
+    })
+  );
+  const interval = parseInt(parts.INTERVAL || '1', 10) || 1;
+  const freq = (parts.FREQ || '').toUpperCase();
+  if (freq === 'DAILY') return { freq: 'daily', interval };
+  if (freq === 'WEEKLY') {
+    const byDay = (parts.BYDAY || '')
+      .split(',')
+      .map((d) => ICS_DAYS.indexOf(d.replace(/^[-+]?\d+/, '').toUpperCase()))
+      .filter((i) => i >= 0);
+    return { freq: 'weekly', interval, byDay };
+  }
+  if (freq === 'MONTHLY') {
+    const byMonthDay = (parts.BYMONTHDAY || '')
+      .split(',')
+      .map((n) => parseInt(n, 10))
+      .filter((n) => n >= 1 && n <= 31);
+    return { freq: 'monthly', interval, byMonthDay };
+  }
+  return null;
+}
+
+/**
+ * Lee un .ics y devuelve elementos listos para `store.addMany`.
+ * Los VEVENT con RRULE se convierten en rutinas; el resto, en eventos.
+ */
+function parseICS(text) {
+  const lines = unfold(text).split(/\r?\n/);
+  const items = [];
+  let current = null;
+  let alarmTrigger = null;
+  let inAlarm = false;
+
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line) continue;
+
+    if (line === 'BEGIN:VEVENT') { current = { alarms: [] }; continue; }
+    if (line === 'END:VEVENT') {
+      if (current && current.title && current.start) items.push(finalize(current));
+      current = null;
+      continue;
+    }
+    if (!current) continue;
+
+    if (line === 'BEGIN:VALARM') { inAlarm = true; alarmTrigger = null; continue; }
+    if (line === 'END:VALARM') {
+      if (alarmTrigger !== null) current.alarms.push(alarmTrigger);
+      inAlarm = false;
+      continue;
+    }
+
+    const idx = line.indexOf(':');
+    if (idx === -1) continue;
+    const left = line.slice(0, idx);
+    const value = line.slice(idx + 1);
+    const [nameRaw, ...paramParts] = left.split(';');
+    const name = nameRaw.toUpperCase();
+    const params = paramParts.join(';');
+
+    if (inAlarm) {
+      if (name === 'TRIGGER') {
+        const m = /^-?P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?/.exec(value);
+        if (m) {
+          const mins = (+(m[1] || 0)) * 1440 + (+(m[2] || 0)) * 60 + (+(m[3] || 0));
+          alarmTrigger = mins;
+        }
+      }
+      continue;
+    }
+
+    switch (name) {
+      case 'SUMMARY': current.title = unescapeText(value); break;
+      case 'DESCRIPTION': current.notes = unescapeText(value); break;
+      case 'DTSTART': {
+        const parsed = parseIcsDate(value, params);
+        if (parsed) { current.start = parsed.date; current.allDay = parsed.allDay; }
+        break;
+      }
+      case 'DTEND': {
+        const parsed = parseIcsDate(value, params);
+        if (parsed) current.end = parsed.date;
+        break;
+      }
+      case 'RRULE': current.rule = rruleToRule(value); break;
+      default: break;
+    }
+  }
+
+  return items;
+}
+
+function localInput(d) {
+  return `${dateKey(d)}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+function finalize(raw) {
+  const alarms = [...new Set(raw.alarms)].sort((a, b) => a - b);
+  if (raw.rule) {
+    return {
+      type: 'routine',
+      title: raw.title,
+      notes: raw.notes || '',
+      time: raw.allDay ? '' : `${pad(raw.start.getHours())}:${pad(raw.start.getMinutes())}`,
+      rule: raw.rule,
+      startDate: dateKey(raw.start),
+      endDate: null,
+      alarms,
+      completions: {},
+      color: 'violet',
+    };
+  }
+  let end = raw.end || null;
+  if (raw.allDay && end) {
+    // En .ics el DTEND de un evento de día completo es exclusivo: resta un día.
+    end = new Date(end.getTime() - 86400000);
+  }
+  return {
+    type: 'event',
+    title: raw.title,
+    notes: raw.notes || '',
+    start: raw.allDay ? dateKey(raw.start) + 'T00:00' : localInput(raw.start),
+    end: end ? (raw.allDay ? dateKey(end) + 'T23:59' : localInput(end)) : '',
+    allDay: Boolean(raw.allDay),
+    alarms,
+    color: 'blue',
+  };
+}
+
+  return {
+    buildICS,
+    parseICS,
+  };
+})();
+
+__m["js/ui.js"] = (() => {
+/* Pequeños ayudantes de DOM. Sin framework: solo lo justo. */
+function el(tag, props = {}, children = []) {
+  const node = document.createElement(tag);
+  for (const [key, value] of Object.entries(props)) {
+    if (value === null || value === undefined || value === false) continue;
+    if (key === 'class') node.className = value;
+    else if (key === 'text') node.textContent = value;
+    else if (key === 'html') node.innerHTML = value;
+    else if (key === 'style' && typeof value === 'object') {
+      for (const [prop, val] of Object.entries(value)) {
+        // Object.assign no vale: las variables CSS (--algo) solo entran por setProperty.
+        if (prop.startsWith('--')) node.style.setProperty(prop, val);
+        else node.style[prop] = val;
+      }
+    }
+    else if (key.startsWith('on') && typeof value === 'function') node.addEventListener(key.slice(2).toLowerCase(), value);
+    else if (key === 'dataset') Object.assign(node.dataset, value);
+    else node.setAttribute(key, value === true ? '' : value);
+  }
+  for (const child of [].concat(children)) {
+    if (child === null || child === undefined || child === false) continue;
+    node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+  }
+  return node;
+}
+function icon(path, size) {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('aria-hidden', 'true');
+  if (size) { svg.style.width = size + 'px'; svg.style.height = size + 'px'; }
+  svg.innerHTML = path;
+  return svg;
+}
+const ICONS = {
+  check: '<path d="M4 12.5l5 5L20 6.5"/>',
+  pencil: '<path d="M4 20h4l10-10-4-4L4 16v4z"/><path d="M14.5 5.5l4 4"/>',
+  bell: '<path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10.5 20a2 2 0 0 0 3 0"/>',
+  left: '<path d="M15 5l-7 7 7 7"/>',
+  right: '<path d="M9 5l7 7-7 7"/>',
+  today: '<circle cx="12" cy="12" r="4"/>',
+  download: '<path d="M12 4v11M7.5 11l4.5 4.5L16.5 11"/><path d="M4 19h16"/>',
+  repeat: '<path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/>',
+  trash: '<path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13"/>',
+};
+const COLORS = ['blue', 'violet', 'green', 'orange', 'pink', 'teal', 'gray'];
+function colorVar(name) {
+  return `var(--c-${COLORS.includes(name) ? name : 'blue'})`;
+}
+
+/* ---- Toasts ---- */
+function toast(message, kind = '') {
+  const root = document.getElementById('toast-root');
+  const node = el('div', { class: 'toast ' + kind, text: message });
+  root.append(node);
+  setTimeout(() => {
+    node.style.transition = 'opacity .25s';
+    node.style.opacity = '0';
+    setTimeout(() => node.remove(), 260);
+  }, 2600);
+}
+
+/* ---- Hoja modal ---- */
+
+let closeCurrentSheet = null;
+function openSheet(build) {
+  closeSheet();
+  const root = document.getElementById('sheet-root');
+  const sheet = el('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true' });
+  const backdrop = el('div', { class: 'sheet-backdrop' }, [sheet]);
+
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) closeSheet(); });
+
+  const onKey = (e) => { if (e.key === 'Escape') closeSheet(); };
+  document.addEventListener('keydown', onKey);
+
+  closeCurrentSheet = () => {
+    document.removeEventListener('keydown', onKey);
+    backdrop.remove();
+    document.body.style.overflow = '';
+    closeCurrentSheet = null;
+  };
+
+  build(sheet, closeSheet);
+  root.append(backdrop);
+  document.body.style.overflow = 'hidden';
+  const firstInput = sheet.querySelector('input[type="text"]');
+  if (firstInput && window.matchMedia('(min-width: 620px)').matches) firstInput.focus();
+  return closeSheet;
+}
+function closeSheet() {
+  if (closeCurrentSheet) closeCurrentSheet();
+}
+function sheetHeader(title, { onCancel, onSave, saveLabel = 'Guardar' } = {}) {
+  return el('div', { class: 'sheet-head' }, [
+    el('button', { class: 'link-btn', type: 'button', text: 'Cancelar', onClick: onCancel || closeSheet }),
+    el('h2', { text: title }),
+    onSave
+      ? el('button', { class: 'link-btn', type: 'button', text: saveLabel, onClick: onSave })
+      : el('span', { style: { width: '62px' } }),
+  ]);
+}
+function field(label, control, hint) {
+  return el('div', { class: 'field' }, [
+    el('label', { text: label }),
+    control,
+    hint ? el('p', { class: 'hint-text', text: hint }) : null,
+  ]);
+}
+function segmented(options, value, onChange) {
+  const wrap = el('div', { class: 'segmented' });
+  for (const opt of options) {
+    const btn = el('button', {
+      type: 'button',
+      text: opt.label,
+      'aria-pressed': String(opt.value === value),
+      onClick: () => {
+        for (const child of wrap.children) child.setAttribute('aria-pressed', 'false');
+        btn.setAttribute('aria-pressed', 'true');
+        onChange(opt.value);
+      },
+    });
+    wrap.append(btn);
+  }
+  return wrap;
+}
+function toggle(label, hint, checked, onChange) {
+  const input = el('input', { type: 'checkbox', checked, onChange: (e) => onChange(e.target.checked) });
+  return el('div', { class: 'toggle-row' }, [
+    el('div', {}, [
+      el('div', { class: 'label', text: label }),
+      hint ? el('div', { class: 'hint', text: hint }) : null,
+    ]),
+    el('label', { class: 'switch' }, [input, el('span', {})]),
+  ]);
+}
+function confirmDialog(message, onConfirm, { confirmLabel = 'Eliminar', danger = true } = {}) {
+  openSheet((sheet, close) => {
+    sheet.append(
+      sheetHeader('¿Seguro?'),
+      el('p', { style: { margin: '0 2px 18px', color: 'var(--muted)' }, text: message }),
+      el('button', {
+        class: 'btn ' + (danger ? 'danger' : ''),
+        type: 'button',
+        text: confirmLabel,
+        onClick: () => { close(); onConfirm(); },
+      }),
+      el('button', { class: 'btn secondary', type: 'button', text: 'Cancelar', onClick: close })
+    );
+  });
+}
+
+/** Descarga un archivo generado en el propio dispositivo. */
+function download(filename, content, mime = 'text/plain') {
+  const blob = new Blob([content], { type: mime + ';charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = el('a', { href: url, download: filename });
+  document.body.append(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+  return {
+    el,
+    icon,
+    ICONS,
+    COLORS,
+    colorVar,
+    toast,
+    openSheet,
+    closeSheet,
+    sheetHeader,
+    field,
+    segmented,
+    toggle,
+    confirmDialog,
+    download,
+  };
+})();
+
+__m["js/alarms.js"] = (() => {
+/*
+ * Motor de alarmas dentro de la app.
+ *
+ * Ojo con la letra pequeña de iOS: una web (aunque esté instalada en la pantalla
+ * de inicio) NO puede despertarse sola en segundo plano sin un servidor de push.
+ * Así que esto suena cuando la app está abierta. Para que el iPhone te avise con
+ * la pantalla bloqueada, exporta el .ics y añádelo al Calendario (Ajustes → Exportar),
+ * o usa la app nativa de la carpeta `ios/`.
+ */
+const { upcomingAlarms } = __m["js/agenda.js"];
+const { getSettings } = __m["js/store.js"];
+const { formatTime } = __m["js/dates.js"];
+const FIRED_KEY = 'organizador.alarmas-disparadas';
+const TICK_MS = 15000;
+const LATE_TOLERANCE_MS = 5 * 60000; // no suenes una alarma de hace media hora
+
+let timer = null;
+let audioCtx = null;
+let ringing = null;      // { stop() }
+let onFire = () => {};
+
+function loadFired() {
+  try {
+    const data = JSON.parse(localStorage.getItem(FIRED_KEY) || '{}');
+    const cutoff = Date.now() - 3 * 86400000;
+    for (const [id, at] of Object.entries(data)) if (at < cutoff) delete data[id];
+    return data;
+  } catch {
+    return {};
+  }
+}
+
+let fired = loadFired();
+
+function markFired(id) {
+  fired[id] = Date.now();
+  try { localStorage.setItem(FIRED_KEY, JSON.stringify(fired)); } catch { /* sin espacio: da igual */ }
+}
+
+/** El audio en iOS solo arranca tras un gesto del usuario. */
+function unlockAudio() {
+  if (!audioCtx) {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    audioCtx = new Ctx();
+  }
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+
+function beep(startAt, freq, duration) {
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, startAt);
+  gain.gain.linearRampToValueAtTime(0.35, startAt + 0.02);
+  gain.gain.setValueAtTime(0.35, startAt + duration - 0.05);
+  gain.gain.linearRampToValueAtTime(0, startAt + duration);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(startAt);
+  osc.stop(startAt + duration + 0.02);
+  return osc;
+}
+
+/** Vibrar es un extra: los navegadores lo bloquean si el usuario aún no ha tocado nada. */
+function vibrate(pattern) {
+  if (!navigator.vibrate) return;
+  if (navigator.userActivation && !navigator.userActivation.hasBeenActive) return;
+  try { navigator.vibrate(pattern); } catch { /* da igual */ }
+}
+
+/** Patrón de timbre repetido hasta que se descarta (máx. 60 s). */
+function startRinging() {
+  if (!getSettings().sound) return;
+  unlockAudio();
+  if (!audioCtx) return;
+  stopRinging();
+
+  let cancelled = false;
+  const oscillators = [];
+  const started = Date.now();
+
+  const round = () => {
+    if (cancelled || Date.now() - started > 60000) return;
+    const t = audioCtx.currentTime;
+    // Tri-tono ascendente, dos veces.
+    [0, 0.9].forEach((offset) => {
+      oscillators.push(beep(t + offset, 880, 0.18));
+      oscillators.push(beep(t + offset + 0.22, 1108, 0.18));
+      oscillators.push(beep(t + offset + 0.44, 1318, 0.28));
+    });
+    schedule = setTimeout(round, 2200);
+  };
+
+  let schedule = null;
+  round();
+
+  vibrate([400, 200, 400, 200, 600]);
+
+  ringing = {
+    stop() {
+      cancelled = true;
+      clearTimeout(schedule);
+      for (const osc of oscillators) { try { osc.stop(); } catch { /* ya parado */ } }
+      vibrate(0);
+    },
+  };
+}
+function stopRinging() {
+  if (ringing) ringing.stop();
+  ringing = null;
+}
+function notificationsSupported() {
+  return typeof Notification !== 'undefined';
+}
+async function requestNotificationPermission() {
+  if (!notificationsSupported()) return 'unsupported';
+  if (Notification.permission === 'granted') return 'granted';
+  try {
+    return await Notification.requestPermission();
+  } catch {
+    return 'denied';
+  }
+}
+
+async function showNotification(title, body) {
+  if (!notificationsSupported() || Notification.permission !== 'granted') return;
+  try {
+    const reg = await navigator.serviceWorker?.getRegistration();
+    const options = { body, icon: './icons/icon-192.png', badge: './icons/icon-192.png', tag: 'organizador-alarma', renotify: true };
+    if (reg) await reg.showNotification(title, options);
+    else new Notification(title, options);
+  } catch (err) {
+    console.warn('No se pudo mostrar la notificación:', err);
+  }
+}
+
+function alarmText(alarm) {
+  const { occurrence, minutesBefore } = alarm;
+  const hora = occurrence.start ? formatTime(occurrence.start) : '';
+  if (minutesBefore === 0) return `Ahora · ${hora}`;
+  if (minutesBefore < 60) return `En ${minutesBefore} min · ${hora}`;
+  if (minutesBefore % 1440 === 0) return `En ${minutesBefore / 1440} día(s) · ${hora}`;
+  return `En ${Math.round(minutesBefore / 60)} h · ${hora}`;
+}
+
+const snoozed = []; // { at: number, alarm }
+
+function tick() {
+  const now = new Date();
+  const due = upcomingAlarms(new Date(now.getTime() - LATE_TOLERANCE_MS), 1)
+    .filter((a) => a.at <= now && !fired[a.id]);
+
+  for (let i = snoozed.length - 1; i >= 0; i--) {
+    if (snoozed[i].at <= now.getTime()) due.push(snoozed.splice(i, 1)[0].alarm);
+  }
+
+  if (!due.length) return;
+
+  for (const alarm of due) markFired(alarm.id);
+
+  const first = due[0];
+  startRinging();
+  showNotification(first.occurrence.title, alarmText(first));
+  onFire(due);
+}
+
+/** Arranca el bucle de comprobación. `handler(alarmas)` recibe las que acaban de sonar. */
+function start(handler) {
+  onFire = handler || (() => {});
+  stop();
+  tick();
+  timer = setInterval(tick, TICK_MS);
+  document.addEventListener('visibilitychange', onVisible);
+}
+
+function onVisible() {
+  if (document.visibilityState === 'visible') tick();
+}
+function stop() {
+  if (timer) clearInterval(timer);
+  timer = null;
+  document.removeEventListener('visibilitychange', onVisible);
+}
+
+/** Vuelve a sonar dentro de N minutos. */
+function snooze(alarm, minutes = 5) {
+  stopRinging();
+  snoozed.push({ at: Date.now() + minutes * 60000, alarm });
+}
+
+  return {
+    unlockAudio,
+    startRinging,
+    stopRinging,
+    notificationsSupported,
+    requestNotificationPermission,
+    start,
+    stop,
+    snooze,
+  };
+})();
+
+__m["js/editor.js"] = (() => {
+/* Hoja para crear y editar eventos, tareas y rutinas. */
+const { el, openSheet, closeSheet, sheetHeader, field, segmented, toggle, confirmDialog, toast, COLORS, colorVar } = __m["js/ui.js"];
+const { dateKey, timeKey, toLocalInput, parseLocal, fromParts, DAY_SHORT } = __m["js/dates.js"];
+const { save, remove, getSettings } = __m["js/store.js"];
+const ALARM_PRESETS = [
+  { value: 0, label: 'A la hora' },
+  { value: 5, label: '5 min' },
+  { value: 10, label: '10 min' },
+  { value: 15, label: '15 min' },
+  { value: 30, label: '30 min' },
+  { value: 60, label: '1 h' },
+  { value: 120, label: '2 h' },
+  { value: 1440, label: '1 día' },
+];
+
+const TYPES = [
+  { value: 'event', label: 'Evento' },
+  { value: 'task', label: 'Tarea' },
+  { value: 'routine', label: 'Rutina' },
+];
+
+function blank(kind, defaults = {}) {
+  const now = new Date();
+  const base = {
+    title: '',
+    notes: '',
+    color: 'blue',
+    alarms: [...getSettings().defaultAlarms],
+  };
+  const day = defaults.date || dateKey(now);
+  const nextHour = new Date(now.getTime() + 60 * 60000);
+  nextHour.setMinutes(0, 0, 0);
+
+  if (kind === 'event') {
+    return { ...base, type: 'event', allDay: false, start: `${day}T${timeKey(nextHour)}`, end: '' };
+  }
+  if (kind === 'task') {
+    return { ...base, type: 'task', color: 'green', allDay: false, due: `${day}T${timeKey(nextHour)}`, done: false };
+  }
+  return {
+    ...base,
+    type: 'routine',
+    color: 'violet',
+    time: '09:00',
+    rule: { freq: 'daily', interval: 1, byDay: [], byMonthDay: [] },
+    startDate: day,
+    endDate: '',
+    completions: {},
+  };
+}
+
+/**
+ * Abre el editor.
+ * @param {'event'|'task'|'routine'} kind
+ * @param {object|null} existing  elemento a editar, o null para crear
+ * @param {{date?: string}} defaults
+ */
+function openEditor(kind = 'event', existing = null, defaults = {}) {
+  let draft = existing
+    ? structuredClone(existing)
+    : blank(kind, defaults);
+
+  openSheet((sheet, close) => {
+    const body = el('div');
+
+    const rebuild = () => {
+      body.replaceChildren(...buildFields(draft, (next) => { draft = next; rebuild(); }));
+    };
+
+    const onSave = () => {
+      const title = (draft.title || '').trim();
+      if (!title) { toast('Ponle un título', 'error'); return; }
+      draft.title = title;
+      if (draft.type === 'routine' && draft.rule.freq === 'weekly' && !draft.rule.byDay.length) {
+        toast('Elige al menos un día de la semana', 'error');
+        return;
+      }
+      if (draft.type === 'routine' && draft.rule.freq === 'monthly' && !draft.rule.byMonthDay.length) {
+        toast('Elige al menos un día del mes', 'error');
+        return;
+      }
+      if (draft.type === 'event' && draft.end && parseLocal(draft.end) < parseLocal(draft.start)) {
+        toast('El final va antes del inicio', 'error');
+        return;
+      }
+      save(draft);
+      close();
+      toast(existing ? 'Guardado' : 'Añadido');
+    };
+
+    sheet.append(
+      sheetHeader(existing ? 'Editar' : 'Nuevo', { onSave }),
+      existing
+        ? null
+        : el('div', { class: 'field' }, [
+            segmented(TYPES, draft.type, (type) => {
+              draft = { ...blank(type, defaults), title: draft.title, notes: draft.notes, alarms: draft.alarms };
+              rebuild();
+            }),
+          ]),
+      body,
+      el('button', { class: 'btn', type: 'button', text: existing ? 'Guardar' : 'Añadir', onClick: onSave }),
+      existing
+        ? el('button', {
+            class: 'btn secondary',
+            type: 'button',
+            text: 'Eliminar',
+            style: { color: 'var(--danger)' },
+            onClick: () => {
+              close();
+              confirmDialog(`Se borrará «${existing.title}». No se puede deshacer.`, () => {
+                remove(existing.type, existing.id);
+                toast('Eliminado');
+              });
+            },
+          })
+        : null
+    );
+
+    rebuild();
+  });
+
+  return closeSheet;
+}
+
+function buildFields(draft, update) {
+  const nodes = [];
+  const set = (patch) => update({ ...draft, ...patch });
+
+  nodes.push(field('Título', el('input', {
+    type: 'text',
+    value: draft.title,
+    placeholder: draft.type === 'routine' ? 'Ej. Tomar la medicación' : 'Ej. Dentista',
+    autocapitalize: 'sentences',
+    onInput: (e) => { draft.title = e.target.value; },
+  })));
+
+  if (draft.type === 'event') nodes.push(...eventFields(draft, set));
+  if (draft.type === 'task') nodes.push(...taskFields(draft, set));
+  if (draft.type === 'routine') nodes.push(...routineFields(draft, set));
+
+  nodes.push(field('Alarmas', alarmPicker(draft, set),
+    'Suenan dentro de la app cuando está abierta. Para que el iPhone avise con la pantalla bloqueada, exporta el calendario desde Ajustes.'));
+
+  nodes.push(field('Color', colorPicker(draft, set)));
+
+  nodes.push(field('Notas', el('textarea', {
+    value: draft.notes || '',
+    placeholder: 'Opcional',
+    onInput: (e) => { draft.notes = e.target.value; },
+  })));
+
+  return nodes;
+}
+
+/* ---- Campos por tipo ---- */
+
+function eventFields(draft, set) {
+  const start = parseLocal(draft.start) || new Date();
+  const end = draft.end ? parseLocal(draft.end) : null;
+
+  const nodes = [
+    el('div', { class: 'card', style: { marginBottom: '14px' } }, [
+      toggle('Todo el día', null, Boolean(draft.allDay), (checked) => set({ allDay: checked })),
+    ]),
+    field('Empieza', dateTimeInputs(start, draft.allDay, (d) => { draft.start = toLocalInput(d); })),
+  ];
+
+  const endWrap = el('div');
+  const renderEnd = () => {
+    endWrap.replaceChildren(
+      draft.end
+        ? el('div', {}, [
+            dateTimeInputs(end || start, draft.allDay, (d) => { draft.end = toLocalInput(d); }),
+            el('button', {
+              class: 'link-btn', type: 'button', text: 'Quitar hora de fin',
+              onClick: () => { draft.end = ''; set({ end: '' }); },
+            }),
+          ])
+        : el('button', {
+            class: 'btn secondary', type: 'button', text: '+ Añadir hora de fin',
+            onClick: () => set({ end: toLocalInput(new Date(start.getTime() + 60 * 60000)) }),
+          })
+    );
+  };
+  renderEnd();
+  nodes.push(field('Termina', endWrap));
+
+  return nodes;
+}
+
+function taskFields(draft, set) {
+  const nodes = [
+    el('div', { class: 'card', style: { marginBottom: '14px' } }, [
+      toggle('Con fecha', 'Sin fecha se queda en la bandeja de entrada', Boolean(draft.due),
+        (checked) => set({ due: checked ? toLocalInput(nextRoundHour()) : '' })),
+      draft.due ? toggle('Todo el día', null, Boolean(draft.allDay), (checked) => set({ allDay: checked })) : null,
+    ].filter(Boolean)),
+  ];
+
+  if (draft.due) {
+    const due = parseLocal(draft.due);
+    nodes.push(field('Fecha límite', dateTimeInputs(due, draft.allDay, (d) => { draft.due = toLocalInput(d); })));
+  }
+
+  return nodes;
+}
+
+function routineFields(draft, set) {
+  const nodes = [];
+  const rule = draft.rule;
+
+  nodes.push(field('Se repite', segmented([
+    { value: 'daily', label: 'Diaria' },
+    { value: 'weekly', label: 'Semanal' },
+    { value: 'monthly', label: 'Mensual' },
+  ], rule.freq, (freq) => {
+    const next = { ...rule, freq };
+    if (freq === 'weekly' && !next.byDay.length) next.byDay = [new Date().getDay()];
+    if (freq === 'monthly' && !next.byMonthDay.length) next.byMonthDay = [new Date().getDate()];
+    set({ rule: next });
+  })));
+
+  if (rule.freq === 'weekly') {
+    const pills = el('div', { class: 'pills' });
+    for (let d = 0; d < 7; d++) {
+      const index = (d + 1) % 7; // empieza en lunes
+      const active = rule.byDay.includes(index);
+      pills.append(el('button', {
+        class: 'pill day-pill',
+        type: 'button',
+        text: DAY_SHORT[index],
+        'aria-pressed': String(active),
+        onClick: () => {
+          const byDay = active ? rule.byDay.filter((x) => x !== index) : [...rule.byDay, index].sort();
+          set({ rule: { ...rule, byDay } });
+        },
+      }));
+    }
+    const shortcuts = el('div', { class: 'pills', style: { marginTop: '8px' } }, [
+      el('button', { class: 'pill', type: 'button', text: 'L-V', onClick: () => set({ rule: { ...rule, byDay: [1, 2, 3, 4, 5] } }) }),
+      el('button', { class: 'pill', type: 'button', text: 'Fin de semana', onClick: () => set({ rule: { ...rule, byDay: [0, 6] } }) }),
+      el('button', { class: 'pill', type: 'button', text: 'Todos', onClick: () => set({ rule: { ...rule, byDay: [0, 1, 2, 3, 4, 5, 6] } }) }),
+    ]);
+    nodes.push(field('Días', el('div', {}, [pills, shortcuts])));
+  }
+
+  if (rule.freq === 'monthly') {
+    nodes.push(field('Días del mes', el('input', {
+      type: 'text',
+      inputmode: 'numeric',
+      value: rule.byMonthDay.join(', '),
+      placeholder: 'Ej. 1, 15',
+      onChange: (e) => {
+        const byMonthDay = e.target.value
+          .split(/[,\s]+/)
+          .map((n) => parseInt(n, 10))
+          .filter((n) => n >= 1 && n <= 31);
+        set({ rule: { ...rule, byMonthDay: [...new Set(byMonthDay)].sort((a, b) => a - b) } });
+      },
+    }), 'Si pones 31, en los meses cortos se hace el último día.'));
+  }
+
+  const unit = { daily: 'días', weekly: 'semanas', monthly: 'meses' }[rule.freq];
+  nodes.push(field('Cada cuánto', el('div', { class: 'row-2' }, [
+    el('input', {
+      type: 'number', min: '1', max: '99', value: String(rule.interval || 1),
+      onChange: (e) => set({ rule: { ...rule, interval: Math.max(1, parseInt(e.target.value, 10) || 1) } }),
+    }),
+    el('div', { style: { alignSelf: 'center', color: 'var(--muted)' }, text: unit }),
+  ])));
+
+  const timeWrap = el('div', { class: 'card', style: { marginBottom: '14px' } }, [
+    toggle('A una hora concreta', 'Si no, aparece como pendiente del día', Boolean(draft.time),
+      (checked) => set({ time: checked ? '09:00' : '' })),
+  ]);
+  nodes.push(timeWrap);
+
+  if (draft.time) {
+    nodes.push(field('Hora', el('input', {
+      type: 'time', value: draft.time,
+      onChange: (e) => { draft.time = e.target.value || '09:00'; },
+    })));
+  }
+
+  nodes.push(field('Vigencia', el('div', { class: 'row-2' }, [
+    el('div', {}, [
+      el('label', { style: { fontSize: '12px', color: 'var(--muted)' }, text: 'Desde' }),
+      el('input', { type: 'date', value: draft.startDate || '', onChange: (e) => { draft.startDate = e.target.value; } }),
+    ]),
+    el('div', {}, [
+      el('label', { style: { fontSize: '12px', color: 'var(--muted)' }, text: 'Hasta (opcional)' }),
+      el('input', { type: 'date', value: draft.endDate || '', onChange: (e) => { draft.endDate = e.target.value; } }),
+    ]),
+  ])));
+
+  return nodes;
+}
+
+/* ---- Controles compartidos ---- */
+
+function nextRoundHour() {
+  const d = new Date(Date.now() + 60 * 60000);
+  d.setMinutes(0, 0, 0);
+  return d;
+}
+
+function dateTimeInputs(value, allDay, onChange) {
+  const current = { date: dateKey(value), time: timeKey(value) };
+  const emit = () => onChange(fromParts(current.date, allDay ? '00:00' : current.time));
+
+  const dateInput = el('input', {
+    type: 'date', value: current.date,
+    onChange: (e) => { current.date = e.target.value || current.date; emit(); },
+  });
+
+  if (allDay) return dateInput;
+
+  return el('div', { class: 'row-2' }, [
+    dateInput,
+    el('input', {
+      type: 'time', value: current.time,
+      onChange: (e) => { current.time = e.target.value || current.time; emit(); },
+    }),
+  ]);
+}
+
+function alarmPicker(draft, set) {
+  const wrap = el('div', { class: 'pills' });
+  const alarms = draft.alarms || [];
+  for (const preset of ALARM_PRESETS) {
+    const active = alarms.includes(preset.value);
+    wrap.append(el('button', {
+      class: 'pill',
+      type: 'button',
+      text: preset.label,
+      'aria-pressed': String(active),
+      onClick: () => {
+        const next = active ? alarms.filter((m) => m !== preset.value) : [...alarms, preset.value];
+        set({ alarms: next.sort((a, b) => a - b) });
+      },
+    }));
+  }
+  return wrap;
+}
+
+function colorPicker(draft, set) {
+  const wrap = el('div', { class: 'swatches' });
+  for (const color of COLORS) {
+    wrap.append(el('button', {
+      class: 'swatch',
+      type: 'button',
+      'aria-label': color,
+      'aria-pressed': String(draft.color === color),
+      style: { '--dot': colorVar(color) },
+      onClick: () => set({ color }),
+    }));
+  }
+  return wrap;
+}
+
+  return {
+    openEditor,
+  };
+})();
+
+__m["js/components.js"] = (() => {
+/* Piezas de interfaz reutilizadas por varias vistas. */
+const { el, icon, ICONS, colorVar } = __m["js/ui.js"];
+const { formatTime, relative } = __m["js/dates.js"];
+const { toggleTask, toggleRoutine } = __m["js/store.js"];
+const { describeRule } = __m["js/agenda.js"];
+const { openEditor } = __m["js/editor.js"];
+const KIND_LABEL = { event: 'Evento', task: 'Tarea', routine: 'Rutina' };
+
+function alarmLabel(minutes) {
+  if (minutes === 0) return 'a la hora';
+  if (minutes < 60) return `${minutes} min antes`;
+  if (minutes < 1440) return `${minutes / 60} h antes`;
+  return `${minutes / 1440} d antes`;
+}
+
+/** Fila de una ocurrencia (evento, tarea o rutina en un día concreto). */
+function occurrenceRow(occ, { showRelative = false } = {}) {
+  const { kind, item, done } = occ;
+  const checkable = kind !== 'event';
+
+  const check = checkable
+    ? el('button', {
+        class: 'check' + (done ? ' done' : ''),
+        type: 'button',
+        'aria-label': done ? 'Marcar como pendiente' : 'Marcar como hecho',
+        onClick: (e) => {
+          e.stopPropagation();
+          if (kind === 'task') toggleTask(item.id);
+          else toggleRoutine(item.id, occ.dateKey);
+        },
+      }, [icon(ICONS.check)])
+    : el('div', {
+        class: 'check',
+        style: { border: 'none', background: colorVar(item.color), width: '10px', height: '10px', margin: '8px 7px 0' },
+      });
+
+  const meta = [];
+  if (occ.dueLabel) meta.push(el('span', { class: 'chip' }, [icon(ICONS.clock, 12), occ.dueLabel]));
+  if (kind === 'routine') meta.push(el('span', { class: 'chip' }, [icon(ICONS.repeat, 12), describeRule(item.rule)]));
+  else if (!occ.dueLabel) meta.push(el('span', { class: 'chip', text: KIND_LABEL[kind] }));
+
+  if (occ.overdue) meta.push(el('span', { class: 'overdue', text: 'atrasado' }));
+  else if (showRelative && occ.start) meta.push(el('span', { text: relative(occ.start) }));
+
+  if (occ.end && occ.start && !occ.allDay) meta.push(el('span', { text: `hasta ${formatTime(occ.end)}` }));
+
+  for (const minutes of item.alarms || []) {
+    meta.push(el('span', { class: 'chip alarm' }, [icon(ICONS.bell, 12), alarmLabel(minutes)]));
+  }
+
+  if (item.notes) meta.push(el('span', { text: item.notes.split('\n')[0].slice(0, 60) }));
+
+  const row = el('div', {
+    class: 'row' + (done ? ' done' : ''),
+    style: { '--dot': colorVar(item.color) },
+  }, [
+    el('div', { class: 'row-bar' }),
+    check,
+    el('div', { class: 'row-main' }, [
+      el('div', { class: 'row-title', text: occ.title }),
+      el('div', { class: 'row-meta' }, meta),
+    ]),
+    el('div', { class: 'row-time', text: occ.allDay || !occ.start ? 'todo el día' : formatTime(occ.start) }),
+    el('button', {
+      class: 'row-edit',
+      type: 'button',
+      'aria-label': 'Editar',
+      onClick: (e) => { e.stopPropagation(); openEditor(kind, item); },
+    }, [icon(ICONS.pencil, 18)]),
+  ]);
+
+  return row;
+}
+function emptyCard(title, hint) {
+  return el('div', { class: 'card' }, [
+    el('div', { class: 'empty' }, [el('strong', { text: title }), hint || '']),
+  ]);
+}
+function listCard(rows, emptyTitle, emptyHint) {
+  if (!rows.length) return emptyCard(emptyTitle, emptyHint);
+  return el('div', { class: 'card' }, rows);
+}
+function sectionTitle(text, right) {
+  return el('div', { class: 'section-title' }, [el('span', { text }), right || null]);
+}
+
+  return {
+    occurrenceRow,
+    emptyCard,
+    listCard,
+    sectionTitle,
+  };
+})();
+
+__m["js/views/today.js"] = (() => {
+const { el, icon, ICONS } = __m["js/ui.js"];
+const { occurrenceRow, listCard, sectionTitle } = __m["js/components.js"];
+const { occurrencesForDay, overdueTasks, inboxTasks, upcomingAlarms } = __m["js/agenda.js"];
+const { formatDateLong, formatTime, relative, parseLocal, addDays, formatDateShort } = __m["js/dates.js"];
+const { openEditor } = __m["js/editor.js"];
+function renderToday() {
+  const now = new Date();
+  const today = occurrencesForDay(now);
+  const pending = today.filter((o) => !o.done);
+  const doneCount = today.length - pending.length;
+  const next = today.find((o) => !o.done && o.start && o.start > now);
+  const nextAlarm = upcomingAlarms(now, 3)[0];
+
+  const root = el('div');
+
+  /* Cabecera */
+  const hero = el('div', { class: 'hero' }, [
+    el('div', { class: 'date', text: formatDateLong(now) }),
+    el('div', { class: 'headline', text: headline(pending.length) }),
+    el('div', {
+      class: 'sub',
+      text: today.length
+        ? `${pending.length} pendiente${pending.length === 1 ? '' : 's'} · ${doneCount} hecho${doneCount === 1 ? '' : 's'}`
+        : 'Nada en la agenda de hoy.',
+    }),
+  ]);
+
+  if (next) {
+    hero.append(el('div', { class: 'next-up' }, [
+      el('div', {}, [
+        el('div', { style: { opacity: .85, fontSize: '12px' }, text: 'A CONTINUACIÓN' }),
+        el('b', { text: next.title }),
+      ]),
+      el('div', { style: { textAlign: 'right' } }, [
+        el('div', { text: formatTime(next.start) }),
+        el('div', { style: { opacity: .85, fontSize: '12px' }, text: relative(next.start, now) }),
+      ]),
+    ]));
+  } else if (nextAlarm) {
+    hero.append(el('div', { class: 'next-up' }, [
+      el('div', {}, [
+        el('div', { style: { opacity: .85, fontSize: '12px' }, text: 'PRÓXIMA ALARMA' }),
+        el('b', { text: nextAlarm.occurrence.title }),
+      ]),
+      el('div', { style: { textAlign: 'right' } }, [
+        el('div', { text: formatDateShort(nextAlarm.at) + ' ' + formatTime(nextAlarm.at) }),
+        el('div', { style: { opacity: .85, fontSize: '12px' }, text: relative(nextAlarm.at, now) }),
+      ]),
+    ]));
+  }
+
+  root.append(hero);
+
+  /* Atrasadas */
+  const overdue = overdueTasks(now);
+  if (overdue.length) {
+    root.append(
+      sectionTitle('Atrasado'),
+      listCard(overdue.map((task) => occurrenceRow({
+        key: `task:${task.id}:overdue`,
+        kind: 'task',
+        item: task,
+        title: task.title,
+        start: parseLocal(task.due),
+        end: null,
+        allDay: Boolean(task.allDay),
+        done: false,
+        overdue: true,
+        dateKey: task.due.slice(0, 10),
+      })), '')
+    );
+  }
+
+  /* Hoy */
+  root.append(sectionTitle('Hoy'));
+  root.append(listCard(
+    today.map((occ) => occurrenceRow(occ, { showRelative: true })),
+    'Día despejado',
+    'Toca el botón + para añadir algo.'
+  ));
+
+  /* Sin fecha */
+  const inbox = inboxTasks();
+  if (inbox.length) {
+    root.append(sectionTitle('Sin fecha'));
+    root.append(listCard(inbox.map((task) => occurrenceRow({
+      key: `task:${task.id}:inbox`,
+      kind: 'task',
+      item: task,
+      title: task.title,
+      start: null,
+      end: null,
+      allDay: true,
+      done: false,
+      overdue: false,
+      dateKey: '',
+    })), ''));
+  }
+
+  /* Mañana */
+  const tomorrow = occurrencesForDay(addDays(now, 1)).filter((o) => !o.done);
+  if (tomorrow.length) {
+    root.append(sectionTitle('Mañana'));
+    root.append(listCard(tomorrow.map((occ) => occurrenceRow(occ)), ''));
+  }
+
+  return root;
+}
+
+function headline(pending) {
+  if (pending === 0) return 'Todo listo';
+  if (pending === 1) return 'Queda 1 cosa';
+  return `Quedan ${pending} cosas`;
+}
+function todayActions() {
+  return [
+    el('button', {
+      class: 'icon-btn',
+      type: 'button',
+      'aria-label': 'Nueva tarea rápida',
+      onClick: () => openEditor('task'),
+    }, [icon(ICONS.check)]),
+  ];
+}
+
+  return {
+    renderToday,
+    todayActions,
+  };
+})();
+
+__m["js/views/calendar.js"] = (() => {
+const { el, icon, ICONS, colorVar } = __m["js/ui.js"];
+const { occurrenceRow, listCard, sectionTitle } = __m["js/components.js"];
+const { occurrencesForDay } = __m["js/agenda.js"];
+const {
+  monthGrid, dateKey, isToday, sameDay, addMonths, formatMonthYear, formatDateLong,
+  DAY_SHORT, startOfDay,
+} = __m["js/dates.js"];
+const { getSettings } = __m["js/store.js"];
+const { openEditor } = __m["js/editor.js"];
+/* El mes y el día elegidos sobreviven entre repintados. */
+const view = { cursor: startOfDay(new Date()), selected: startOfDay(new Date()) };
+function renderCalendar() {
+  const weekStart = getSettings().startOfWeek;
+  const root = el('div');
+
+  root.append(el('div', { class: 'cal-head' }, [
+    el('div', { class: 'month', text: formatMonthYear(view.cursor) }),
+    el('div', { class: 'cal-nav' }, [
+      el('button', {
+        class: 'icon-btn', type: 'button', 'aria-label': 'Mes anterior',
+        onClick: () => { view.cursor = addMonths(view.cursor, -1); repaint(); },
+      }, [icon(ICONS.left)]),
+      el('button', {
+        class: 'icon-btn', type: 'button', 'aria-label': 'Hoy',
+        onClick: () => { view.cursor = startOfDay(new Date()); view.selected = startOfDay(new Date()); repaint(); },
+      }, [icon(ICONS.today)]),
+      el('button', {
+        class: 'icon-btn', type: 'button', 'aria-label': 'Mes siguiente',
+        onClick: () => { view.cursor = addMonths(view.cursor, 1); repaint(); },
+      }, [icon(ICONS.right)]),
+    ]),
+  ]));
+
+  const weekdays = el('div', { class: 'weekdays' });
+  for (let i = 0; i < 7; i++) weekdays.append(el('span', { text: DAY_SHORT[(weekStart + i) % 7] }));
+  root.append(weekdays);
+
+  const grid = el('div', { class: 'grid' });
+  for (const day of monthGrid(view.cursor, weekStart)) {
+    grid.append(dayCell(day));
+  }
+  root.append(grid);
+
+  /* Detalle del día seleccionado */
+  const items = occurrencesForDay(view.selected);
+  root.append(sectionTitle(formatDateLong(view.selected), el('button', {
+    class: 'link-btn', type: 'button', text: '+ Añadir',
+    onClick: () => openEditor('event', null, { date: dateKey(view.selected) }),
+  })));
+  root.append(listCard(
+    items.map((occ) => occurrenceRow(occ)),
+    'Nada este día',
+    'Toca «Añadir» para llenarlo.'
+  ));
+
+  return root;
+}
+
+function dayCell(day) {
+  const items = occurrencesForDay(day);
+  const outOfMonth = day.getMonth() !== view.cursor.getMonth();
+  const pending = items.filter((o) => !o.done);
+
+  const dots = el('div', { class: 'dots' });
+  const colors = [...new Set(items.slice(0, 12).map((o) => o.item.color || 'blue'))].slice(0, 4);
+  for (const color of colors) dots.append(el('div', { class: 'dot', style: { '--dot': colorVar(color) } }));
+
+  return el('button', {
+    class: 'day'
+      + (outOfMonth ? ' out' : '')
+      + (isToday(day) ? ' today' : '')
+      + (sameDay(day, view.selected) ? ' selected' : ''),
+    type: 'button',
+    onClick: () => {
+      view.selected = startOfDay(day);
+      if (outOfMonth) view.cursor = startOfDay(day);
+      repaint();
+    },
+  }, [
+    el('span', { text: String(day.getDate()) }),
+    dots,
+    pending.length > 3 ? el('span', { class: 'count', text: `+${pending.length - 3}` }) : null,
+  ]);
+}
+
+let repaint = () => {};
+function setCalendarRepaint(fn) {
+  repaint = fn;
+}
+function goToDate(date) {
+  view.cursor = startOfDay(date);
+  view.selected = startOfDay(date);
+}
+
+  return {
+    renderCalendar,
+    setCalendarRepaint,
+    goToDate,
+  };
+})();
+
+__m["js/views/tasks.js"] = (() => {
+const { el, segmented } = __m["js/ui.js"];
+const { occurrenceRow, listCard, sectionTitle } = __m["js/components.js"];
+const { getState } = __m["js/store.js"];
+const { parseLocal, startOfDay, dateKey, daysBetween, formatDateShort } = __m["js/dates.js"];
+const state = { filter: 'pendientes' };
+function renderTasks() {
+  const root = el('div');
+  const all = getState().tasks;
+
+  root.append(el('div', { style: { marginBottom: '6px' } }, [
+    segmented([
+      { value: 'pendientes', label: 'Pendientes' },
+      { value: 'hechas', label: 'Hechas' },
+      { value: 'todas', label: 'Todas' },
+    ], state.filter, (value) => { state.filter = value; repaint(); }),
+  ]));
+
+  const visible = all.filter((t) => {
+    if (state.filter === 'pendientes') return !t.done;
+    if (state.filter === 'hechas') return t.done;
+    return true;
+  });
+
+  if (!visible.length) {
+    root.append(sectionTitle('Tareas puntuales'));
+    root.append(listCard([], 'Sin tareas aquí', 'Las tareas puntuales son las que se hacen una vez y se acaban.'));
+    return root;
+  }
+
+  const today = startOfDay(new Date());
+  const groups = new Map([
+    ['Atrasadas', []],
+    ['Hoy', []],
+    ['Esta semana', []],
+    ['Más adelante', []],
+    ['Sin fecha', []],
+  ]);
+
+  for (const task of visible) {
+    const row = toRow(task);
+    if (!task.due) { groups.get('Sin fecha').push(row); continue; }
+    const diff = daysBetween(today, parseLocal(task.due));
+    if (diff < 0) groups.get(task.done ? 'Más adelante' : 'Atrasadas').push(row);
+    else if (diff === 0) groups.get('Hoy').push(row);
+    else if (diff <= 7) groups.get('Esta semana').push(row);
+    else groups.get('Más adelante').push(row);
+  }
+
+  for (const [name, rows] of groups) {
+    if (!rows.length) continue;
+    root.append(sectionTitle(`${name} · ${rows.length}`));
+    root.append(listCard(rows, ''));
+  }
+
+  return root;
+}
+
+function toRow(task) {
+  const due = task.due ? parseLocal(task.due) : null;
+  return occurrenceRow({
+    key: `task:${task.id}`,
+    kind: 'task',
+    item: task,
+    title: task.title,
+    start: due && !task.allDay ? due : null,
+    end: null,
+    allDay: !due || Boolean(task.allDay),
+    done: Boolean(task.done),
+    overdue: Boolean(due) && !task.done && due < new Date(),
+    dateKey: due ? dateKey(due) : '',
+    dueLabel: due ? formatDateShort(due) : '',
+  });
+}
+
+let repaint = () => {};
+function setTasksRepaint(fn) {
+  repaint = fn;
+}
+
+  return {
+    renderTasks,
+    setTasksRepaint,
+  };
+})();
+
+__m["js/views/routines.js"] = (() => {
+const { el } = __m["js/ui.js"];
+const { occurrenceRow, listCard, sectionTitle } = __m["js/components.js"];
+const { getState, isRoutineDone } = __m["js/store.js"];
+const { routineOccursOn } = __m["js/agenda.js"];
+const { dateKey, fromParts, addDays, DAY_SHORT, isToday } = __m["js/dates.js"];
+function renderRoutines() {
+  const root = el('div');
+  const routines = getState().routines;
+
+  if (!routines.length) {
+    root.append(sectionTitle('Rutinas'));
+    root.append(listCard([], 'Todavía no hay rutinas',
+      'Una rutina es algo que se repite: tomar la medicación, el gimnasio, sacar la basura…'));
+    return root;
+  }
+
+  const today = new Date();
+  const key = dateKey(today);
+  const active = routines.filter((r) => routineOccursOn(r, today));
+  const rest = routines.filter((r) => !routineOccursOn(r, today));
+
+  if (active.length) {
+    const doneCount = active.filter((r) => isRoutineDone(r, key)).length;
+    root.append(sectionTitle(`Hoy · ${doneCount}/${active.length}`));
+    root.append(listCard(active.map((r) => routineRow(r, today)), ''));
+  }
+
+  root.append(sectionTitle('Racha de los últimos 14 días'));
+  root.append(el('div', { class: 'card' }, routines.map((r) => streakRow(r, today))));
+
+  if (rest.length) {
+    root.append(sectionTitle('Hoy no tocan'));
+    root.append(listCard(rest.map((r) => routineRow(r, today, { inactive: true })), ''));
+  }
+
+  return root;
+}
+
+function routineRow(routine, date) {
+  const key = dateKey(date);
+  return occurrenceRow({
+    key: `routine:${routine.id}:${key}`,
+    kind: 'routine',
+    item: routine,
+    title: routine.title,
+    start: routine.time ? fromParts(key, routine.time) : null,
+    end: null,
+    allDay: !routine.time,
+    done: isRoutineDone(routine, key),
+    overdue: false,
+    dateKey: key,
+  });
+}
+
+/** Cuadrícula de 14 días: verde si se hizo, hueco si tocaba y no se hizo. */
+function streakRow(routine, today) {
+  const cells = el('div', { style: { display: 'flex', gap: '3px', marginTop: '6px' } });
+  for (let i = 13; i >= 0; i--) {
+    const day = addDays(today, -i);
+    const key = dateKey(day);
+    const due = routineOccursOn(routine, day);
+    const done = isRoutineDone(routine, key);
+    let background = 'var(--surface-2)';
+    if (due && done) background = 'var(--ok)';
+    else if (due && !done && !isToday(day)) background = 'color-mix(in srgb, var(--danger) 35%, transparent)';
+    else if (due) background = 'color-mix(in srgb, var(--accent) 30%, transparent)';
+    cells.append(el('div', {
+      title: `${key}${due ? (done ? ' · hecho' : ' · pendiente') : ' · no tocaba'}`,
+      style: { flex: '1', height: '22px', borderRadius: '4px', background },
+    }));
+  }
+
+  const labels = el('div', { style: { display: 'flex', gap: '3px', marginTop: '3px' } });
+  for (let i = 13; i >= 0; i--) {
+    const day = addDays(today, -i);
+    labels.append(el('div', {
+      style: { flex: '1', textAlign: 'center', fontSize: '9px', color: 'var(--muted)' },
+      text: DAY_SHORT[day.getDay()],
+    }));
+  }
+
+  const total = countDone(routine);
+  return el('div', { style: { padding: '12px 14px', borderBottom: '1px solid var(--line)' } }, [
+    el('div', { style: { display: 'flex', justifyContent: 'space-between', gap: '10px' } }, [
+      el('div', { style: { fontWeight: '550', fontSize: '15px' }, text: routine.title }),
+      el('div', { style: { fontSize: '13px', color: 'var(--muted)' }, text: `${total} veces` }),
+    ]),
+    cells,
+    labels,
+  ]);
+}
+
+function countDone(routine) {
+  return Object.keys(routine.completions || {}).length;
+}
+
+  return {
+    renderRoutines,
+  };
+})();
+
+__m["js/views/settings.js"] = (() => {
+const { el, toggle, field, download, toast, confirmDialog } = __m["js/ui.js"];
+const { sectionTitle } = __m["js/components.js"];
+const { getSettings, updateSettings, exportJSON, importJSON, clearAll, addMany, getState } = __m["js/store.js"];
+const { buildICS, parseICS } = __m["js/ics.js"];
+const { requestNotificationPermission, notificationsSupported, startRinging, stopRinging } = __m["js/alarms.js"];
+const { dateKey } = __m["js/dates.js"];
+const ALARM_PRESETS = [0, 5, 10, 15, 30, 60];
+function renderSettings() {
+  const settings = getSettings();
+  const root = el('div');
+  const state = getState();
+
+  /* ---- iPhone ---- */
+  root.append(sectionTitle('Alarmas en el iPhone'));
+  root.append(el('div', { class: 'card' }, [
+    el('div', { style: { padding: '14px' } }, [
+      el('p', { style: { margin: '0 0 10px', fontSize: '14px', color: 'var(--muted)' },
+        text: 'Una web no puede sonar sola con el móvil bloqueado. La forma fiable de que el iPhone te avise es pasar tu agenda al Calendario de iOS: sus alertas sí son del sistema.' }),
+      el('button', {
+        class: 'btn', type: 'button', text: '📅 Enviar al Calendario del iPhone',
+        onClick: shareICS,
+      }),
+      el('button', {
+        class: 'btn secondary', type: 'button', text: 'Descargar archivo .ics',
+        onClick: () => {
+          download(`organizador-${dateKey(new Date())}.ics`, buildICS(), 'text/calendar');
+          toast('Archivo .ics generado');
+        },
+      }),
+      el('p', { class: 'hint-text' },
+        ['En el iPhone: pulsa «Enviar al Calendario», elige ',
+         el('b', { text: 'Calendario' }),
+         ' en el menú de compartir y confirma «Añadir todo». Las alarmas que hayas puesto se convierten en alertas nativas.']),
+    ]),
+  ]));
+
+  /* ---- Notificaciones ---- */
+  root.append(sectionTitle('Avisos dentro de la app'));
+  const permission = notificationsSupported() ? Notification.permission : 'unsupported';
+  root.append(el('div', { class: 'card' }, [
+    toggle('Sonido de alarma', 'Timbre y vibración cuando la app está abierta', settings.sound,
+      (checked) => { updateSettings({ sound: checked }); }),
+    el('div', { class: 'toggle-row' }, [
+      el('div', {}, [
+        el('div', { class: 'label', text: 'Notificaciones del navegador' }),
+        el('div', { class: 'hint', text: permissionHint(permission) }),
+      ]),
+      permission === 'granted'
+        ? el('span', { style: { color: 'var(--ok)', fontWeight: '600' }, text: 'Activadas' })
+        : el('button', {
+            class: 'pill', type: 'button', text: 'Activar',
+            onClick: async () => {
+              const result = await requestNotificationPermission();
+              toast(result === 'granted' ? 'Notificaciones activadas' : 'No se concedió el permiso',
+                result === 'granted' ? '' : 'error');
+              repaint();
+            },
+          }),
+    ]),
+    el('div', { class: 'toggle-row' }, [
+      el('div', {}, [
+        el('div', { class: 'label', text: 'Probar la alarma' }),
+        el('div', { class: 'hint', text: 'Comprueba que se oye en este dispositivo' }),
+      ]),
+      el('button', {
+        class: 'pill', type: 'button', text: 'Probar',
+        onClick: () => { startRinging(); setTimeout(stopRinging, 3500); },
+      }),
+    ]),
+  ]));
+
+  /* ---- Preferencias ---- */
+  root.append(sectionTitle('Preferencias'));
+  root.append(el('div', { class: 'card', style: { padding: '14px' } }, [
+    field('Alarmas por defecto para lo nuevo', alarmDefaults(settings)),
+    field('Nombre del calendario exportado', el('input', {
+      type: 'text', value: settings.calendarName,
+      onChange: (e) => updateSettings({ calendarName: e.target.value.trim() || 'Mi Organizador' }),
+    })),
+    field('La semana empieza en', el('select', {
+      onChange: (e) => { updateSettings({ startOfWeek: Number(e.target.value) }); },
+    }, [
+      el('option', { value: '1', selected: settings.startOfWeek === 1, text: 'Lunes' }),
+      el('option', { value: '0', selected: settings.startOfWeek === 0, text: 'Domingo' }),
+    ])),
+  ]));
+
+  /* ---- Datos ---- */
+  root.append(sectionTitle('Tus datos'));
+  root.append(el('div', { class: 'card' }, [
+    el('div', { style: { padding: '14px' } }, [
+      el('p', { style: { margin: '0 0 12px', fontSize: '14px', color: 'var(--muted)' },
+        text: `${state.events.length} eventos · ${state.tasks.length} tareas · ${state.routines.length} rutinas. Todo se guarda solo en este dispositivo.` }),
+      el('button', {
+        class: 'btn secondary', type: 'button', text: 'Guardar copia de seguridad (.json)',
+        onClick: () => {
+          download(`organizador-backup-${dateKey(new Date())}.json`, exportJSON(), 'application/json');
+          toast('Copia descargada');
+        },
+      }),
+      fileButton('Restaurar copia (.json)', '.json,application/json', async (text) => {
+        try {
+          importJSON(text);
+          toast('Copia restaurada');
+        } catch (err) {
+          toast('El archivo no es válido', 'error');
+          console.error(err);
+        }
+      }),
+      fileButton('Importar calendario (.ics)', '.ics,text/calendar', async (text) => {
+        try {
+          const items = parseICS(text);
+          if (!items.length) { toast('No encontré eventos en ese archivo', 'error'); return; }
+          addMany(items);
+          toast(`${items.length} elemento(s) importado(s)`);
+        } catch (err) {
+          toast('No pude leer el .ics', 'error');
+          console.error(err);
+        }
+      }),
+      el('button', {
+        class: 'btn secondary', type: 'button', text: 'Borrar todo',
+        style: { color: 'var(--danger)' },
+        onClick: () => confirmDialog('Se borrarán todos tus eventos, tareas y rutinas de este dispositivo.',
+          () => { clearAll(); toast('Todo borrado'); }, { confirmLabel: 'Borrar todo' }),
+      }),
+    ]),
+  ]));
+
+  root.append(el('p', { class: 'hint-text', style: { textAlign: 'center', marginTop: '24px' },
+    text: 'Organizador · funciona sin conexión · tus datos no salen de aquí' }));
+
+  return root;
+}
+
+function permissionHint(permission) {
+  if (permission === 'unsupported') return 'Este navegador no las admite';
+  if (permission === 'granted') return 'Verás un aviso al saltar cada alarma';
+  if (permission === 'denied') return 'Bloqueadas: actívalas en los ajustes del navegador';
+  return 'En iPhone, añade antes la app a la pantalla de inicio';
+}
+
+function alarmDefaults(settings) {
+  const wrap = el('div', { class: 'pills' });
+  for (const minutes of ALARM_PRESETS) {
+    const active = settings.defaultAlarms.includes(minutes);
+    wrap.append(el('button', {
+      class: 'pill', type: 'button',
+      text: minutes === 0 ? 'A la hora' : minutes < 60 ? `${minutes} min` : `${minutes / 60} h`,
+      'aria-pressed': String(active),
+      onClick: () => {
+        const next = active
+          ? settings.defaultAlarms.filter((m) => m !== minutes)
+          : [...settings.defaultAlarms, minutes].sort((a, b) => a - b);
+        updateSettings({ defaultAlarms: next });
+        repaint();
+      },
+    }));
+  }
+  return wrap;
+}
+
+function fileButton(label, accept, onText) {
+  const input = el('input', {
+    type: 'file', accept, style: { display: 'none' },
+    onChange: async (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      onText(await file.text());
+      e.target.value = '';
+    },
+  });
+  const button = el('button', { class: 'btn secondary', type: 'button', text: label, onClick: () => input.click() });
+  return el('div', {}, [button, input]);
+}
+
+async function shareICS() {
+  const content = buildICS();
+  const filename = `${(getSettings().calendarName || 'organizador').replace(/[^\w-]+/g, '-').toLowerCase()}.ics`;
+  const file = new File([content], filename, { type: 'text/calendar' });
+
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], title: getSettings().calendarName });
+      return;
+    } catch (err) {
+      if (err && err.name === 'AbortError') return;
+      console.warn('No se pudo compartir:', err);
+    }
+  }
+  download(filename, content, 'text/calendar');
+  toast('Tu navegador no comparte archivos: lo he descargado');
+}
+
+let repaint = () => {};
+function setSettingsRepaint(fn) {
+  repaint = fn;
+}
+
+  return {
+    renderSettings,
+    setSettingsRepaint,
+  };
+})();
+
+__m["js/app.js"] = (() => {
+/* Punto de entrada: pestañas, repintado y la alarma en pantalla. */
+const { el, icon, ICONS, toast } = __m["js/ui.js"];
+const { subscribe } = __m["js/store.js"];
+const { openEditor } = __m["js/editor.js"];
+const { formatTime, formatDateLong } = __m["js/dates.js"];
+const alarms = __m["js/alarms.js"];const { renderToday, todayActions } = __m["js/views/today.js"];
+const { renderCalendar, setCalendarRepaint } = __m["js/views/calendar.js"];
+const { renderTasks, setTasksRepaint } = __m["js/views/tasks.js"];
+const { renderRoutines } = __m["js/views/routines.js"];
+const { renderSettings, setSettingsRepaint } = __m["js/views/settings.js"];
+const VIEWS = {
+  hoy: { title: 'Hoy', render: renderToday, actions: todayActions, newType: 'task' },
+  calendario: { title: 'Calendario', render: renderCalendar, newType: 'event' },
+  tareas: { title: 'Tareas', render: renderTasks, newType: 'task' },
+  rutinas: { title: 'Rutinas', render: renderRoutines, newType: 'routine' },
+  ajustes: { title: 'Ajustes', render: renderSettings, newType: 'task' },
+};
+
+let current = 'hoy';
+
+const viewRoot = document.getElementById('view');
+const titleNode = document.getElementById('view-title');
+const actionsNode = document.getElementById('topbar-actions');
+
+function render() {
+  const view = VIEWS[current];
+  titleNode.textContent = view.title;
+  actionsNode.replaceChildren(...(view.actions ? view.actions() : []));
+
+  const scroll = window.scrollY;
+  viewRoot.replaceChildren(view.render());
+  window.scrollTo({ top: scroll });
+
+  for (const tab of document.querySelectorAll('.tab')) {
+    tab.setAttribute('aria-selected', String(tab.dataset.tab === current));
+  }
+}
+
+function go(tab) {
+  if (!VIEWS[tab]) return;
+  current = tab;
+  location.hash = '#' + tab;
+  window.scrollTo({ top: 0 });
+  render();
+}
+
+/* ---- Pestañas ---- */
+
+document.getElementById('tabbar').addEventListener('click', (e) => {
+  const tab = e.target.closest('.tab');
+  if (tab) go(tab.dataset.tab);
+});
+
+window.addEventListener('hashchange', () => {
+  const tab = location.hash.replace('#', '');
+  if (VIEWS[tab] && tab !== current) { current = tab; render(); }
+});
+
+document.getElementById('fab').addEventListener('click', () => {
+  openEditor(VIEWS[current].newType);
+});
+
+/* ---- Repintado tras cualquier cambio de datos ---- */
+
+subscribe(() => render());
+setCalendarRepaint(render);
+setTasksRepaint(render);
+setSettingsRepaint(render);
+
+/* Cambio de día a medianoche: refresca la vista sola. */
+let lastDay = new Date().toDateString();
+setInterval(() => {
+  const today = new Date().toDateString();
+  if (today !== lastDay) { lastDay = today; render(); }
+}, 30000);
+
+/* ---- Alarma en pantalla ---- */
+
+const alarmRoot = document.getElementById('alarm-root');
+
+function showAlarm(due) {
+  const [first, ...rest] = due;
+  const occ = first.occurrence;
+
+  const dismiss = () => {
+    alarms.stopRinging();
+    alarmRoot.replaceChildren();
+  };
+
+  const card = el('div', { class: 'alarm-card' }, [
+    el('div', { class: 'alarm-bell' }, [icon(ICONS.bell)]),
+    el('div', { class: 'alarm-when', text: whenLabel(first) }),
+    el('div', { class: 'alarm-title', text: occ.title }),
+    el('div', {
+      class: 'alarm-sub',
+      text: occ.start ? `${formatDateLong(occ.start)} · ${formatTime(occ.start)}` : 'Sin hora',
+    }),
+    el('button', { class: 'btn', type: 'button', text: 'Vale', onClick: dismiss }),
+    el('button', {
+      class: 'btn secondary', type: 'button', text: 'Posponer 5 min',
+      onClick: () => { alarms.snooze(first, 5); alarmRoot.replaceChildren(); toast('Vuelvo en 5 minutos'); },
+    }),
+    rest.length ? el('div', { class: 'alarm-more', text: `y ${rest.length} aviso(s) más a la vez` }) : null,
+  ]);
+
+  alarmRoot.replaceChildren(el('div', { class: 'alarm-backdrop' }, [card]));
+}
+
+function whenLabel(alarm) {
+  const m = alarm.minutesBefore;
+  if (!m) return 'Es la hora';
+  const falta = (n, unidad) => (n === 1 ? `Falta 1 ${unidad}` : `Faltan ${n} ${unidad}s`);
+  if (m < 60) return falta(m, 'minuto');
+  if (m < 1440) return falta(Math.round(m / 60), 'hora');
+  return falta(Math.round(m / 1440), 'día');
+}
+
+alarms.start(showAlarm);
+
+/* El audio de iOS necesita un gesto previo del usuario para poder sonar después. */
+const unlock = () => alarms.unlockAudio();
+document.addEventListener('pointerdown', unlock, { once: true });
+document.addEventListener('keydown', unlock, { once: true });
+
+/* ---- Arranque ---- */
+
+const initial = location.hash.replace('#', '');
+if (VIEWS[initial]) current = initial;
+render();
+
+
+
+  return {
+
+  };
+})();
+
+</script>
+</body>
+</html>

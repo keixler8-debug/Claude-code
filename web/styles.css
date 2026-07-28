@@ -52,6 +52,53 @@
   }
 }
 
+/* El visor de artifacts marca el tema en la raíz; debe ganar a la preferencia
+   del sistema en los dos sentidos, así que ambos temas se declaran explícitos. */
+:root[data-theme="dark"] {
+  --bg: #0b0d13;
+  --surface: #151824;
+  --surface-2: #1e2231;
+  --text: #e9ecf5;
+  --muted: #8d93a6;
+  --line: #262b3b;
+  --accent: #748ffc;
+  --accent-soft: #1e2440;
+  --danger: #ff6b6b;
+  --ok: #51cf66;
+  --warn: #ff922b;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+
+  --c-blue: #748ffc;
+  --c-violet: #9775fa;
+  --c-green: #51cf66;
+  --c-orange: #ff922b;
+  --c-pink: #f783ac;
+  --c-teal: #38d9a9;
+  --c-gray: #909296;
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f5f9;
+  --surface: #ffffff;
+  --surface-2: #eceef5;
+  --text: #14161c;
+  --muted: #6b7180;
+  --line: #dfe2ec;
+  --accent: #4c6ef5;
+  --accent-soft: #e6ebff;
+  --danger: #e03131;
+  --ok: #2f9e44;
+  --warn: #e8590c;
+  --shadow: 0 1px 2px rgba(16, 20, 40, .06), 0 8px 24px rgba(16, 20, 40, .07);
+  --c-blue: #4c6ef5;
+  --c-violet: #7950f2;
+  --c-green: #2f9e44;
+  --c-orange: #f76707;
+  --c-pink: #e64980;
+  --c-teal: #0ca678;
+  --c-gray: #868e96;
+}
+
 * { box-sizing: border-box; }
 
 html, body {

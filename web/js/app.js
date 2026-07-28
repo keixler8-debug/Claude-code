@@ -132,8 +132,10 @@ const initial = location.hash.replace('#', '');
 if (VIEWS[initial]) current = initial;
 render();
 
+/* build:sw:start — la versión de un solo archivo no tiene service worker que registrar */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch((err) => console.warn('SW no registrado:', err));
   });
 }
+/* build:sw:end */
