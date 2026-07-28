@@ -160,6 +160,82 @@ export function occurrencesForRange(from, to) {
   return days;
 }
 
+/* Cuánto historial se recorre como mucho al calcular rachas. */
+const MAX_HISTORY_DAYS = 400;
+
+/**
+ * Seguimiento de una rutina: qué días tocaba, cuáles hiciste y cuáles no.
+ *
+ * Devuelve:
+ *   history    [{ date, key, due, done }] día a día desde que empezó la rutina
+ *   dueTotal   días en los que tocaba
+ *   doneTotal  días que la hiciste
+ *   dueWindow / doneWindow / rate   lo mismo, limitado a los últimos `windowDays`
+ *   current    racha actual (días con tarea seguidos hechos)
+ *   best       la racha más larga que has tenido
+ */
+export function routineStats(routine, { now = new Date(), windowDays = 30 } = {}) {
+  const today = startOfDay(now);
+  const todayKey = dateKey(today);
+  const earliest = addDays(today, -MAX_HISTORY_DAYS);
+  const start = routine.startDate ? startOfDay(fromParts(routine.startDate)) : earliest;
+  const from = start > earliest ? start : earliest;
+  const windowStart = addDays(today, -(windowDays - 1));
+
+  const history = [];
+  let dueTotal = 0;
+  let doneTotal = 0;
+  let dueWindow = 0;
+  let doneWindow = 0;
+  let best = 0;
+  let run = 0;
+
+  for (let day = new Date(from); day <= today; day = addDays(day, 1)) {
+    const key = dateKey(day);
+    const due = routineOccursOn(routine, day);
+    const done = isRoutineDone(routine, key);
+    history.push({ date: new Date(day), key, due, done });
+    if (!due) continue;
+
+    dueTotal++;
+    if (done) {
+      doneTotal++;
+      run++;
+      if (run > best) best = run;
+    } else {
+      run = 0;
+    }
+
+    if (day >= windowStart) {
+      dueWindow++;
+      if (done) doneWindow++;
+    }
+  }
+
+  // Racha actual: se cuenta hacia atrás por los días en los que tocaba.
+  // El día de hoy, si aún está pendiente, no rompe la racha: no ha terminado.
+  const dueDays = history.filter((entry) => entry.due);
+  let current = 0;
+  for (let i = dueDays.length - 1; i >= 0; i--) {
+    const entry = dueDays[i];
+    if (entry.done) { current++; continue; }
+    if (i === dueDays.length - 1 && entry.key === todayKey) continue;
+    break;
+  }
+
+  return {
+    history,
+    dueTotal,
+    doneTotal,
+    dueWindow,
+    doneWindow,
+    rate: dueWindow ? Math.round((doneWindow / dueWindow) * 100) : null,
+    current,
+    best,
+    windowDays,
+  };
+}
+
 /** Tareas puntuales sin hacer cuya fecha ya pasó (antes de hoy). */
 export function overdueTasks(now = new Date()) {
   const today = startOfDay(now);

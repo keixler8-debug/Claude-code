@@ -704,3 +704,123 @@ input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); ou
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* ---------- Seguimiento de tareas diarias ---------- */
+
+.tracker {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  padding: 13px 14px;
+}
+
+.tracker:last-child { border-bottom: none; }
+.tracker:active { background: var(--surface-2); }
+
+.tracker-head { display: flex; align-items: center; gap: 8px; }
+
+.tracker-head .dot { width: 8px; height: 8px; flex: none; }
+
+.tracker-title {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 550;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tracker-rate {
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.tracker-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 5px 0 8px 16px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.tracker-stat b { color: var(--text); font-variant-numeric: tabular-nums; }
+
+/* Tira de días y cuadrícula del detalle comparten el mismo cuadradito. */
+
+.heat-strip { display: flex; gap: 3px; }
+
+.heat-labels {
+  margin-top: 3px;
+  font-size: 9px;
+  color: var(--muted);
+}
+
+.heat-labels span { flex: 1; text-align: center; }
+
+.heat-cell {
+  flex: 1;
+  height: 22px;
+  border-radius: 4px;
+  background: var(--surface-2);
+}
+
+.heat-cell.big { width: 15px; height: 15px; flex: none; }
+
+.heat-done { background: var(--ok); }
+.heat-missed { background: color-mix(in srgb, var(--danger) 38%, transparent); }
+.heat-today { background: color-mix(in srgb, var(--accent) 40%, transparent); }
+.heat-future { background: transparent; border: 1px dashed var(--line); }
+
+.heat-grid { display: flex; gap: 3px; padding-bottom: 4px; }
+
+.heat-col { display: flex; flex-direction: column; gap: 3px; }
+
+.heat-daynames {
+  font-size: 9px;
+  color: var(--muted);
+  justify-content: space-between;
+  padding-right: 2px;
+}
+
+.heat-daynames span { height: 15px; line-height: 15px; }
+
+.legend {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.legend-item { display: inline-flex; align-items: center; gap: 5px; }
+.legend-item .heat-cell { width: 12px; height: 12px; flex: none; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stat {
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stat:nth-child(odd) { border-right: 1px solid var(--line); }
+.stat:nth-last-child(-n+2) { border-bottom: none; }
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.stat-label { font-size: 13px; font-weight: 600; margin-top: 2px; }
+.stat-hint { font-size: 12px; color: var(--muted); }

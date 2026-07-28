@@ -16,7 +16,7 @@ const VIEWS = {
   hoy: { title: 'Hoy', render: renderToday, actions: todayActions, newType: 'task' },
   calendario: { title: 'Calendario', render: renderCalendar, newType: 'event' },
   tareas: { title: 'Tareas', render: renderTasks, newType: 'task' },
-  rutinas: { title: 'Rutinas', render: renderRoutines, newType: 'routine' },
+  rutinas: { title: 'Tareas diarias', render: renderRoutines, newType: 'routine' },
   ajustes: { title: 'Ajustes', render: renderSettings, newType: 'task' },
 };
 

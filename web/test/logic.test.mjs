@@ -125,5 +125,66 @@ ok('fin corregido al reimportar', vacImp.end.startsWith('2026-08-14'), vacImp.en
 ok('evento de varios días aparece a mitad',
   agenda.occurrencesForDay(new Date(2026, 7, 12)).length === 1);
 
+
+console.log('\n== Seguimiento de rutinas ==');
+store.clearAll();
+const hoy = new Date();
+const k = (n) => dates.dateKey(dates.addDays(hoy, n));
+
+// Rutina diaria empezada hace 9 días; hecha los 4 últimos completos y hoy no.
+const diaria = store.save({
+  type: 'routine', title: 'Medicación', time: '08:00', alarms: [0],
+  rule: { freq: 'daily', interval: 1 }, startDate: k(-9), completions: {
+    [k(-1)]: 'x', [k(-2)]: 'x', [k(-3)]: 'x', [k(-4)]: 'x', [k(-8)]: 'x',
+  }, color: 'violet',
+});
+let s1 = agenda.routineStats(diaria, { now: hoy, windowDays: 30 });
+ok('cuenta los días que tocaba', s1.dueTotal === 10, String(s1.dueTotal));
+ok('cuenta los días hechos', s1.doneTotal === 5, String(s1.doneTotal));
+ok('hoy pendiente no rompe la racha', s1.current === 4, String(s1.current));
+ok('mejor racha', s1.best === 4, String(s1.best));
+ok('porcentaje', s1.rate === 50, String(s1.rate));
+
+// Al marcar hoy, la racha sube a 5.
+store.toggleRoutine(diaria.id, dates.dateKey(hoy));
+s1 = agenda.routineStats(store.find('routine', diaria.id), { now: hoy });
+ok('marcar hoy alarga la racha', s1.current === 5, String(s1.current));
+
+// Un fallo ayer sí rompe la racha.
+const rota = store.save({
+  type: 'routine', title: 'Gimnasio', time: '', alarms: [],
+  rule: { freq: 'daily', interval: 1 }, startDate: k(-5),
+  completions: { [k(-2)]: 'x', [k(-3)]: 'x' }, color: 'orange',
+});
+const s2 = agenda.routineStats(rota, { now: hoy });
+ok('un día perdido rompe la racha', s2.current === 0, String(s2.current));
+ok('pero la mejor se conserva', s2.best === 2, String(s2.best));
+
+// La racha de una semanal cuenta días con tarea, no días de calendario.
+const lunesRef = new Date(2026, 6, 27);
+const semanal = store.save({
+  type: 'routine', title: 'Piscina', time: '', alarms: [],
+  rule: { freq: 'weekly', interval: 1, byDay: [1, 4] }, startDate: '2026-07-06',
+  completions: {
+    '2026-07-20': 'x', '2026-07-23': 'x', // lunes y jueves anteriores
+    '2026-07-13': 'x', '2026-07-16': 'x',
+  }, color: 'teal',
+});
+const s3 = agenda.routineStats(semanal, { now: lunesRef });
+ok('semanal: solo cuenta los días que toca', s3.dueTotal === 7, String(s3.dueTotal));
+ok('semanal: racha por días con tarea', s3.current === 4, String(s3.current));
+ok('el historial cubre día a día', s3.history.length === 22, String(s3.history.length));
+ok('días futuros fuera del historial',
+  s3.history.every((h) => h.date <= dates.startOfDay(lunesRef)));
+
+// Sin nada hecho.
+const nueva = store.save({
+  type: 'routine', title: 'Meditar', time: '', alarms: [],
+  rule: { freq: 'daily', interval: 1 }, startDate: k(0), completions: {}, color: 'pink',
+});
+const s4 = agenda.routineStats(nueva, { now: hoy });
+ok('recién creada: racha 0 y 0%', s4.current === 0 && s4.best === 0 && s4.rate === 0,
+  JSON.stringify({ c: s4.current, b: s4.best, r: s4.rate }));
+
 console.log(failures ? `\n${failures} PRUEBA(S) FALLIDA(S)\n` : '\nTodo correcto ✔\n');
 process.exit(failures ? 1 : 0);
