@@ -1,5 +1,8 @@
 # Organizador
 
+> También hay un **[Lector de PDF en voz alta](lector/)** en este repositorio:
+> abres un PDF y el móvil te lo lee como si fuera un audiolibro.
+
 Calendario, rutinas diarias y tareas puntuales, con alarmas. En español y sin
 cuentas: los datos se quedan en tu dispositivo.
 
