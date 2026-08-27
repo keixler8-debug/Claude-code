@@ -11,6 +11,11 @@ Abres un PDF y te lo lee. Dos mandos, ni uno más:
 > desarrolló en Linux, sin Xcode ni Swift, así que no he podido ejecutarlo.
 > Espera tener que corregir algún detalle la primera vez que lo abras.
 
+> **¿No tienes un Mac?** Entonces esta app no se puede instalar en tu iPhone:
+> Apple obliga a compilarla y firmarla desde un Mac. Hay un camino alternativo
+> que funciona solo con el iPhone y que también suena con la pantalla apagada:
+> [**SIN-MAC.md**](SIN-MAC.md).
+
 ## Qué necesitas
 
 - Un Mac con **Xcode 15 o superior**.

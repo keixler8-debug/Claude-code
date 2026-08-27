@@ -8,7 +8,9 @@ ni servidores: lo que guardas se queda en tu dispositivo.
   resto de este README.
 - **Lector** ([`ios/Lector/`](ios/Lector/)) — abre un PDF y te lo lee en voz
   alta, como un audiolibro: una línea para moverte por el audio y seis
-  velocidades. App nativa de iOS.
+  velocidades. App nativa de iOS. Sin un Mac no se puede instalar, así que hay
+  una alternativa que funciona solo con el iPhone:
+  [`ios/Lector/SIN-MAC.md`](ios/Lector/SIN-MAC.md).
 
 ---
 
