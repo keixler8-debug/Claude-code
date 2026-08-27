@@ -1,3 +1,17 @@
+# Mis apps
+
+En este repositorio viven dos apps distintas, las dos en español y sin cuentas
+ni servidores: lo que guardas se queda en tu dispositivo.
+
+- **Organizador** — calendario, rutinas y tareas con alarmas. Hay versión web
+  ([`web/`](web/)) y app nativa de iOS ([`ios/`](ios/)). Es de lo que habla el
+  resto de este README.
+- **Lector** ([`ios/Lector/`](ios/Lector/)) — abre un PDF y te lo lee en voz
+  alta, como un audiolibro: una línea para moverte por el audio y seis
+  velocidades. App nativa de iOS.
+
+---
+
 # Organizador
 
 Calendario, rutinas diarias y tareas puntuales, con alarmas. En español y sin
@@ -85,6 +99,7 @@ web/
 ios/
   project.yml      Proyecto para XcodeGen
   Organizador/     SwiftUI + UserNotifications
+  Lector/          La otra app: PDFs en voz alta (proyecto aparte)
 ```
 
 ## Copias de seguridad

@@ -1,5 +1,9 @@
 # Organizador · app nativa de iOS
 
+> Esta carpeta contiene **dos** apps independientes: la de aquí (Organizador) y
+> [`Lector/`](Lector/), que lee PDFs en voz alta. Cada una tiene su propio
+> proyecto de Xcode.
+
 Esta es la versión que hace **sonar alarmas de verdad**: notificaciones locales
 del sistema, con el iPhone bloqueado, sin conexión y sin ningún servidor.
 

@@ -1,0 +1,41 @@
+# Proyecto para XcodeGen (https://github.com/yonaskolb/XcodeGen)
+#
+#   cd ios/Lector
+#   brew install xcodegen
+#   xcodegen generate
+#   open Lector.xcodeproj
+#
+# El README de esta carpeta explica también cómo crear el proyecto a mano en
+# Xcode, por si prefieres no instalar nada.
+
+name: Lector
+
+options:
+  bundleIdPrefix: com.ejemplo
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  Lector:
+    type: application
+    platform: iOS
+    sources:
+      - path: Lector
+    settings:
+      base:
+        PRODUCT_NAME: Lector
+        PRODUCT_BUNDLE_IDENTIFIER: com.ejemplo.lector
+        INFOPLIST_FILE: Lector/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"          # solo iPhone
+        SWIFT_EMIT_LOC_STRINGS: YES
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
